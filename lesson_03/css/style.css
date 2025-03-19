@@ -1,3 +1,66 @@
+/* @import url("reset.css"); */
+
 * {
    color: black;
+}
+a {
+   color: blue;
+}
+h3 {
+   color: darkblue;
+}
+.big-title {
+   color: crimson;
+}
+#cadetblue-color {
+   color: cadetblue;
+}
+[class*="dark"] {
+   color: darksalmon;
+}
+[title*="стат"] {
+   color: rgb(59, 21, 9);
+}
+p.text {
+   color: cornflowerblue;
+}
+.one,
+.two,
+h2 {
+   color: indigo;
+}
+.detailes p span {
+   color: forestgreen;
+}
+.article h2 {
+   color: green;
+}
+.article a {
+   color: chocolate; /**/
+}
+.article .students {
+   color: rgba(128, 128, 128, 0.77);
+}
+.info * {
+   color: peru;
+}
+.campus > li {
+   color: deepskyblue;
+}
+.sport ~ p {
+   color: maroon;
+}
+.after + li {
+   color: purple;
+}
+
+.article p a {
+   color: lightseagreen; /*Більш уточнений переписує попередній. Тут в незалежності від послідовності в коді, оскільки в попередньому "article" немає "р". */
+}
+
+/* По переписанню властивості рівнозначних селекторів в залежності від послідовності в коді я зрозумів.
+ Просто не хочу ламати "картинку". */
+
+.one * {
+   color: lightcoral;
 }
