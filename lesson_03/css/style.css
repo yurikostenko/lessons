@@ -64,3 +64,33 @@ h2 {
 .one * {
    color: lightcoral;
 }
+
+/* ========================================= */
+
+.plus > ul > li {
+   color: red;
+}
+.plus > ul > li + li {
+   color: green;
+}
+
+.plus > ul > li > ul > li,
+li span {
+   color: blue;
+}
+.plus > ul > li > ul > li + li,
+span {
+   color: orange;
+}
+
+.plus > ul > li > ul > li > ol > li {
+   color: #4597f7;
+}
+.plus > ul > li > ul > li > ol > li + li,
+li span {
+   color: #5d5d5d;
+}
+
+.plus > ul > li > ul > li > span {
+   color: #a0f0fc;
+}
