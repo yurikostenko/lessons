@@ -1,0 +1,133 @@
+@import url("reset.css");
+
+@font-face {
+   font-family: "CircularStd";
+   src: url(../fonts/CircularStd-Medium.woff2) format("woff2");
+   font-display: swap;
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "CircularStd";
+   src: url(../fonts/CircularStd-Bold.woff2) format("woff2");
+   font-display: swap;
+   font-weight: 700;
+   font-style: normal;
+}
+
+/* =============================================== */
+
+html,
+body {
+   overflow: auto;
+}
+
+body {
+   font-family: "CircularStd", sans-serif;
+   font-size: 14px;
+}
+
+/* =============================================== */
+
+.header,
+footer {
+   padding: 20px 0;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 30px;
+   letter-spacing: 10px;
+   background-color: #6aa4c1;
+   height: 70px;
+}
+.container {
+   max-width: 1050px;
+   margin: 0 auto;
+}
+
+/* =============================================== */
+
+.page {
+   background: #231f8b;
+   padding: 112px 0;
+}
+.content {
+   max-width: 765px;
+   margin-bottom: 70px;
+}
+.label {
+   color: #5a54f2;
+   font-weight: 700;
+   line-height: 1.7;
+   letter-spacing: 0.2px;
+   margin-bottom: 10px;
+}
+.font-accent {
+   font-family: "Montserrat", sans-serif;
+}
+.title {
+   color: #fff;
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 1.2;
+   margin-bottom: 10px;
+}
+.text {
+   color: #fff;
+   font-weight: 500;
+   line-height: 1.4;
+   letter-spacing: 0.2px;
+}
+.items {
+   font-size: 0;
+}
+.item {
+   display: inline-block;
+   background: #fff;
+   max-width: 230px;
+   padding: 35px 40px;
+   margin-right: 32px; /* Не дотримано по макету щоб не зламати картинку оскільки останній відступ ми ще не навчилися прибирати */
+   vertical-align: top;
+}
+.item img {
+   margin-bottom: 20px;
+}
+.top {
+   min-height: 288px;
+}
+.subtitle {
+   color: #252b42;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 1.5;
+   letter-spacing: 0.1px;
+   margin-bottom: 20px;
+}
+.line {
+   background: #e74040;
+   width: 50px;
+   height: 2px;
+   margin-bottom: 20px;
+}
+.text-text {
+   font-size: 14px;
+   color: #737373;
+   font-weight: 400;
+   line-height: 1.4;
+   letter-spacing: 0.2px;
+}
+.bottom {
+   min-height: 312px;
+   margin-top: 48px;
+}
+.color {
+   background: #5a54f2;
+}
+.color,
+.color .subtitle,
+.color .text-text {
+   color: #fff;
+}
+.color .line {
+   background: #fff;
+}
