@@ -1,0 +1,223 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,regular,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular&display=swap");
+
+/* =============================================== */
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+}
+
+/* =============================================== */
+.header {
+   margin-bottom: 50px;
+}
+.header,
+footer {
+   padding: 20px 0;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 30px;
+   letter-spacing: 10px;
+   background-color: #6aa4c1;
+   height: 70px;
+}
+
+/* =============================================== */
+
+.headline {
+   text-align: center;
+   margin-bottom: 50px;
+   font-size: 45px;
+   font-weight: 700;
+   letter-spacing: 8px;
+   color: #913939;
+   text-shadow: 2px 2px 2px coral;
+}
+.caption {
+   font-size: 20px;
+   margin-bottom: 20px;
+}
+
+/* ===== ecobazar ===== */
+
+.ecobazar {
+   font-family: "Poppins", sans-serif;
+   color: #808080;
+   font-size: 14px;
+   line-height: 1.5;
+   margin-bottom: 50px;
+}
+.container {
+   max-width: 678px;
+   margin: 0 auto;
+   padding: 0 15px; /* Відступ безпеки, компенсовано в ширині контейнера */
+}
+.text > p {
+   margin-bottom: 20px;
+}
+.text > p + p + ul + p {
+   margin-bottom: 0;
+}
+.items {
+   margin-bottom: 20px;
+}
+.items > li {
+   background: url("../img/ecobazar/Check.svg") no-repeat left center / 20px 20px;
+   margin-bottom: 14px;
+   padding-left: 28px;
+}
+.items > li + li + li + li {
+   margin-bottom: 0;
+}
+
+/* ===== hydra ===== */
+
+/* ----- version 1 ----- */
+
+.hydra {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 400;
+   line-height: 1.2;
+   color: #fff;
+   background: #302c42;
+   padding: 50px 0;
+}
+.hydra .container {
+   max-width: 1302px;
+   padding: 0 15px; /* Відступ безпеки, компенсовано в ширині контейнера */
+}
+.contacts {
+   font-size: 0;
+   padding: 26px 38px;
+   border-radius: 90px;
+   background: radial-gradient(50.13% 2900.76% at 53.89% 50%, rgba(58, 52, 86, 0.95) 0%, #211e2e 100%);
+   box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+   margin-bottom: 90px;
+}
+[class*="contact-block"] {
+   display: inline-block;
+   max-width: 398px;
+   margin-right: 46px;
+   vertical-align: middle;
+}
+
+.indent {
+   margin: 0;
+}
+.icon {
+   width: 70px;
+   margin-right: 15px;
+}
+.info {
+   display: inline-block;
+   vertical-align: middle;
+}
+.info > p {
+   font-size: 24px;
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+.info > p + p {
+   font-size: 14px;
+   font-weight: 400;
+}
+.border {
+   border-left: 1px solid rgba(192, 183, 232, 0.33);
+   border-right: 1px solid rgba(192, 183, 232, 0.33);
+   padding: 23px 66px 23px 47px;
+}
+
+/* ----- version 2 ----- */
+
+.contact-block-bg > a > p {
+   font-size: 24px;
+   font-weight: 700;
+   margin-bottom: 10px;
+   padding-left: 90px;
+}
+.contact-block-bg > a > p + p {
+   font-size: 14px;
+   font-weight: 400;
+}
+.contact-block-bg > a {
+   background: url("../img/hydra/location.svg") no-repeat left center;
+}
+.contact-block-bg.border > a {
+   background: url("../img/hydra/phone-call.svg") no-repeat left center;
+}
+.contact-block-bg.indent > a {
+   background: url("../img/hydra/mail.svg") no-repeat left center;
+}
+
+/* ===== introduction ===== */
+
+.introduction {
+   font-size: 0;
+   margin-bottom: 100px;
+}
+.heading {
+   display: inline-block;
+   margin-right: 130px;
+}
+.title {
+   font-size: 36px;
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+.subtitle {
+   font-size: 36px;
+   font-weight: 300;
+   min-width: 490px;
+}
+.arrow-right {
+   background: url("../img/hydra/component.svg") no-repeat 280px -28px;
+}
+.content {
+   display: inline-block;
+   max-width: 652px;
+   font-size: 16px;
+   line-height: 1.53; /* Не по макету, але візуально дуже добре */
+}
+
+/* ===== about ===== */
+
+.about {
+   font-size: 0;
+   background:
+      url("../img/hydra/vector-7.svg") no-repeat top center,
+      url("../img/hydra/vector-8.svg") no-repeat bottom 18px center;
+}
+.image {
+   max-width: 524px;
+   width: 100%;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   border-radius: 43% 19%;
+   margin-right: 88px;
+}
+.align {
+   vertical-align: middle;
+}
+.align .title {
+   margin-bottom: 5px;
+}
+.align .subtitle {
+   margin-bottom: 42px;
+}
+.align > p {
+   max-width: 630px;
+   margin-bottom: 28px;
+}
+.btn {
+   padding: 17px 47px 16px 39px;
+   color: #343045;
+   font-size: 12px;
+   font-weight: 700;
+   line-height: 1.2;
+   text-transform: uppercase;
+   border-radius: 40px;
+   background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+}
