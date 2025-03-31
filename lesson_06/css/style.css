@@ -166,11 +166,13 @@ footer {
 .title {
    font-size: 36px;
    font-weight: 700;
+   text-transform: uppercase;
    margin-bottom: 10px;
 }
 .subtitle {
    font-size: 36px;
    font-weight: 300;
+   text-transform: uppercase;
    min-width: 490px;
 }
 .arrow-right {
