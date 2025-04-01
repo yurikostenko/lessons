@@ -66,7 +66,7 @@ footer {
    margin-bottom: 20px;
 }
 .items > li {
-   background: url("../img/ecobazar/Check.svg") no-repeat left center / 20px 20px;
+   background: url("../img/ecobazar/сheck.svg") no-repeat left center / 20px 20px;
    min-height: 20px;
    margin-bottom: 14px;
    padding-left: 28px;
@@ -182,7 +182,8 @@ footer {
    min-width: 490px;
 }
 .arrow-right {
-   background: url("../img/hydra/component.svg") no-repeat 280px -28px;
+   background: url("../img/hydra/component.svg") no-repeat right -28px;
+   padding-right: 248px;
 }
 .content {
    display: inline-block;
