@@ -67,6 +67,7 @@ footer {
 }
 .items > li {
    background: url("../img/ecobazar/Check.svg") no-repeat left center / 20px 20px;
+   min-height: 20px;
    margin-bottom: 14px;
    padding-left: 28px;
 }
@@ -152,6 +153,11 @@ footer {
 .contact-block-bg.indent > a {
    background: url("../img/hydra/mail.svg") no-repeat left center;
 }
+.contact-block-bg > a,
+.contact-block-bg.border > a,
+.contact-block-bg.indent > a {
+   min-height: 66px;
+}
 
 /* ===== introduction ===== */
 
@@ -182,7 +188,7 @@ footer {
    display: inline-block;
    max-width: 652px;
    font-size: 16px;
-   line-height: 1.53; /* Не по макету, але візуально дуже добре */
+   line-height: 1.625;
 }
 
 /* ===== about ===== */
