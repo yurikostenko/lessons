@@ -32,6 +32,9 @@
    font-size: 25px;
    vertical-align: 40px;
 }
+.list a:hover {
+   text-shadow: 2px 1px rgba(96, 96, 96, 0.5);
+}
 .list li:not(:last-child) {
    margin-right: 150px;
 }
