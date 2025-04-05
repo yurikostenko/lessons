@@ -163,11 +163,13 @@
 .content p {
    font-size: 22px;
 }
+.content ul {
+   padding-left: 40px;
+}
 .content li {
    color: #4f4f4f;
    font-size: 20px;
    font-weight: 400;
-   padding-left: 40px;
    text-indent: -40px;
 }
 .content li:not(:last-child) {
