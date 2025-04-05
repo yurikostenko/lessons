@@ -82,10 +82,10 @@
 .items > * {
    margin: 0 20px 20px 0;
 }
-.items > *:last-child {
+.items > .item:last-child {
    margin: 0;
 }
-.items > *:nth-child(3n) {
+.items > .item:nth-child(3n) {
    margin-right: 0;
 }
 .item {
