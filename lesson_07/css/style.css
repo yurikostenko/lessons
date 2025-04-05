@@ -100,10 +100,19 @@
 .item img {
    height: 266px;
 }
+.item img:hover {
+   opacity: 0.8;
+}
 .item > * {
    margin-bottom: 16px;
 }
 .item > *:last-child {
+   margin-bottom: 0;
+}
+.item a > * {
+   margin-bottom: 16px;
+}
+.item a > *:last-child {
    margin-bottom: 0;
 }
 .item p {
@@ -125,7 +134,11 @@
    font-weight: 600;
    line-height: 1.23;
 }
+.user:hover {
+   color: #6f6f6f;
+}
 .btn {
+   display: block;
    color: #fe3f3f;
 }
 .btn:hover {
@@ -190,6 +203,9 @@
    display: block;
    margin: auto;
    margin-top: 15px; /* Тут здається top без варіантів */
+}
+.image:hover::after {
+   background-color: #ecf7c0;
 }
 
 /* ===== game ===== */
