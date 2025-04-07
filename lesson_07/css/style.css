@@ -19,18 +19,37 @@
 /* ===== header ====== */
 
 .header {
+   font-size: 0;
    padding: 20px;
    margin-bottom: 50px;
    background: linear-gradient(90deg, rgba(96, 96, 96, 1) 0%, rgba(252, 252, 252, 1) 50%, rgba(180, 180, 180, 1) 100%);
 }
+.logo {
+   display: inline-block;
+   width: 97px;
+   height: 97px;
+   overflow: hidden;
+   border-radius: 50%;
+   margin-right: 470px;
+   vertical-align: middle;
+}
+.logo img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: -30px 0;
+}
+.logo [alt] {
+   font-size: 16px;
+}
 .list {
+   display: inline-block;
    font-size: 0;
-   margin-right: 50px;
+   vertical-align: middle;
 }
 .list li {
    display: inline-block;
    font-size: 25px;
-   vertical-align: 40px;
 }
 .list a:hover {
    text-shadow: 2px 1px rgba(96, 96, 96, 0.5);
@@ -38,14 +57,17 @@
 .list li:not(:last-child) {
    margin-right: 150px;
 }
-.list::before {
+
+/* Зазвичай лого не додається через псевдоелемент */
+
+/* .list::before {
    content: "";
    background: url(../img/popeye.jpg) -30px 0 no-repeat;
    width: 97px;
    height: 97px;
    border-radius: 50%;
    margin-right: 469px;
-}
+} */
 
 /* =============================================== */
 
@@ -78,6 +100,9 @@
 }
 .items {
    font-size: 0;
+}
+.items [alt] {
+   font-size: 16px;
 }
 .items > * {
    margin: 0 20px 20px 0;
