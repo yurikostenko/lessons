@@ -34,9 +34,6 @@
 .content > img {
    margin-right: 112px;
 }
-.content [alt] {
-   font-size: 14px;
-}
 .list {
    display: inline-block;
    font-size: 0;
@@ -75,7 +72,7 @@
 .hero {
    background: url(../img/hero/nature-1x.avif) center no-repeat;
    height: 860px;
-   margin: -128px 0 178px;
+   margin: -128px 0 128px 0;
 }
 .title {
    padding-top: 352px;
@@ -110,8 +107,10 @@
 .columns {
    font-size: 0;
    margin-bottom: 177px;
+   padding-top: 50px;
 }
 .column {
+   width: 33.333%;
    display: inline-block;
    text-align: center;
    vertical-align: top;
@@ -120,9 +119,6 @@
    width: 84px;
    height: 84px;
    margin-bottom: 25px;
-}
-.column [alt] {
-   font-size: 14px;
 }
 .column:nth-child(1) {
    max-width: 479px;
@@ -133,13 +129,21 @@
 .column:nth-child(3) {
    max-width: 376px;
 }
-.column:not(:last-child) {
-   margin-right: 61px;
+.items > * {
+   margin: 0 61px 20px 0;
+}
+.items > .column:last-child {
+   margin: 0;
+}
+.items > .column:nth-child(3n) {
+   margin-right: 0;
 }
 .subtitle {
    font-size: 48px;
    font-weight: 600;
    line-height: 1.46;
+}
+.subtitle:not(:last-child) {
    margin-bottom: 13px;
 }
 .column p {
@@ -147,16 +151,16 @@
    font-size: 18px;
    line-height: 2;
 }
+.column p:not(:last-child) {
+   margin-bottom: 20px;
+}
 /* ===== person ===== */
 
 .person {
    font-size: 0;
    margin-bottom: 179px;
 }
-body [alt] {
-   font-size: 14px;
-}
-.body img {
+.person-body > img {
    max-width: 557px;
    border-radius: 27% 0;
    margin-right: 136px;
@@ -175,15 +179,22 @@ body [alt] {
 .text > p:first-of-type {
    margin-bottom: 44px;
 }
+.text > p:last-of-type {
+   margin-bottom: 49px;
+}
 .text > *:last-child {
    margin-bottom: 0;
 }
-.text::before {
-   content: "";
-   background: url(../img/vector-5.svg) 0 18px no-repeat;
+.icon {
+   padding-top: 18px;
+   margin-bottom: 60px;
+}
+.icon img {
    width: 80px;
    height: 64px;
-   padding-top: 124px;
+}
+.post {
+   line-height: 1;
 }
 .post p {
    color: #858585;
@@ -191,7 +202,7 @@ body [alt] {
 .name {
    font-size: 36px;
    font-weight: 600;
-   line-height: 1.94;
+   margin-bottom: 15px;
 }
 /* ===== layout ===== */
 .layout {
@@ -199,7 +210,7 @@ body [alt] {
    background: url(../img/unsplash.avif) center no-repeat;
    max-width: 1512px;
    height: 542px;
-   padding: 215px 71px;
+   padding: 225px 71px;
    margin: 0 auto 100px;
 }
 .layout .container {
@@ -207,27 +218,52 @@ body [alt] {
    padding: 0;
 }
 .item {
+   width: 25%;
    display: inline-block;
    vertical-align: top;
+   max-width: 250px;
 }
-.item:nth-child(1) {
-   margin-right: 115px;
-   width: 260px;
-   height: 112px;
+.item img {
+   width: 79px;
+   height: 79px;
+   margin-right: 28px;
 }
-.item:nth-child(2) {
-   width: 254px;
-   height: 97px;
-   margin-right: 103px;
+.item-text {
+   display: inline-block;
+   vertical-align: middle;
+   font-weight: 600;
 }
-.item:nth-child(3) {
-   width: 266px;
-   height: 91px;
-   margin-right: 149px;
+.item-text p {
+   color: #e7e7e7;
+   font-size: 18px;
+   line-height: 1;
 }
-.item:nth-child(4) {
-   width: 221px;
-   height: 112px;
+.value {
+   color: #fff;
+   position: relative;
+   text-align: right;
+   font-size: 48px;
+   line-height: 1;
+   margin: 0 8px 15px 0;
+}
+.value::after {
+   content: "";
+   width: 23px;
+   height: 23px;
+   background: url(../img/layout/plus.svg) 0 0 no-repeat;
+   position: relative;
+   top: -6px;
+   left: 16px;
+   vertical-align: top;
+}
+.body > * {
+   margin: 0 120px 20px 0;
+}
+.body > .item:last-child {
+   margin: 0;
+}
+.body > .item:nth-child(4n) {
+   margin-right: 0;
 }
 
 /* ===== lesson ===== */
@@ -346,4 +382,8 @@ body [alt] {
    text-align: center;
    font-size: 24px;
    background: linear-gradient(90deg, rgba(96, 96, 96, 1) 0%, rgba(252, 252, 252, 1) 50%, rgba(180, 180, 180, 1) 100%);
+}
+
+body [alt] {
+   font-size: 14px;
 }
