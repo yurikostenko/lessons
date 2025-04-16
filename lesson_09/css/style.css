@@ -114,11 +114,7 @@
    height: 100%;
    object-fit: contain;
 }
-.benefit__icon,
-.benefit__icon--white-1-hover,
-.benefit__icon--white-2-hover,
-.benefit__icon--white-3-hover,
-.benefit__icon--white-4-hover {
+.benefit__icon {
    width: 40px;
    height: 40px;
    top: 50%;
@@ -126,24 +122,15 @@
    transform: translate(-50%, -50%);
 }
 .benefit__image--hover,
-.benefit__icon--white-1-hover,
-.benefit__icon--white-2-hover,
-.benefit__icon--white-3-hover,
-.benefit__icon--white-4-hover {
+.benefit__icon--hover {
    display: none;
 }
 .benefit__link:hover .benefit__image--default,
-.benefit__link:hover .benefit__icon--white-1,
-.benefit__link:hover .benefit__icon--white-2,
-.benefit__link:hover .benefit__icon--white-3,
-.benefit__link:hover .benefit__icon--white-4 {
+.benefit__link:hover .benefit__icon--default {
    display: none;
 }
 .benefit__link:hover .benefit__image--hover,
-.benefit__link:hover .benefit__icon--white-1-hover,
-.benefit__link:hover .benefit__icon--white-2-hover,
-.benefit__link:hover .benefit__icon--white-3-hover,
-.benefit__link:hover .benefit__icon--white-4-hover {
+.benefit__link:hover .benefit__icon--hover {
    display: block;
 }
 .benefit__subtitle {
