@@ -83,7 +83,7 @@ body {
    width: 300px;
    height: 150px;
    transform: translateX(-120px);
-   animation: drive 16s linear 2 forwards;
+   animation: drive 16s linear 2 2s forwards;
 }
 .car__block:hover {
    animation-play-state: paused;
