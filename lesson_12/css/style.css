@@ -83,6 +83,9 @@ body {
    transform: translateX(-120px);
    animation: drive 16s linear 2 forwards;
 }
+.car__block:hover {
+   animation-play-state: paused;
+}
 .roof {
    perspective: 170px;
 }
