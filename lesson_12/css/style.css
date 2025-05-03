@@ -12,15 +12,15 @@ body {
    min-height: 100%;
 }
 
-[class*="__container"] {
+/* [class*="__container"] {
    max-width: 1230px;
    margin: 0 auto;
    padding: 0 15px;
-}
+} */
 
 /* ===== header ====== */
 
-.header {
+/* .header {
    font-size: 0;
    padding: 20px;
    background: linear-gradient(90deg, rgba(96, 96, 96, 1) 0%, rgba(252, 252, 252, 1) 50%, rgba(180, 180, 180, 1) 100%);
@@ -51,11 +51,11 @@ body {
    letter-spacing: 8px;
    color: #913939;
    text-shadow: 2px 2px 2px coral;
-}
+} */
 
 /* ===== title ===== */
 
-.products__title {
+/* .products__title {
    margin-bottom: 50px;
 }
 .title {
@@ -64,7 +64,7 @@ body {
    font-weight: 600;
    line-height: 1.2;
    text-align: center;
-}
+} */
 
 /* ===== car ===== */
 
@@ -72,6 +72,8 @@ body {
    position: relative;
    max-width: 1630px;
    min-height: 920px;
+   padding: 0 15px;
+   margin: 0 auto;
    background: url(../img/crossroads-of-roads.avif) no-repeat center/contain;
 }
 .car__block {
@@ -339,9 +341,9 @@ body {
 
 /* ===== footer ===== */
 
-.footer {
+/* .footer {
    padding: 40px 0;
    text-align: center;
    font-size: 24px;
    background: linear-gradient(90deg, rgba(96, 96, 96, 1) 0%, rgba(252, 252, 252, 1) 50%, rgba(180, 180, 180, 1) 100%);
-}
+} */
