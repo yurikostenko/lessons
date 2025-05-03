@@ -203,9 +203,8 @@ body {
 
 .car__container {
    max-width: 1630px;
+   min-height: 1040px;
    background: url(../img/crossroads-of-roads.avif) no-repeat center/contain;
-   width: 1600px;
-   height: 1040px;
 }
 .car__block {
    position: relative;
