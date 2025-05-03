@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+@import url("reset.css");
+
+/* ===== Основні стилі ===== */
+
+body {
+   font-family: "Poppins", sans-serif;
+}
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+}
+
+[class*="__container"] {
+   max-width: 1230px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+/* ===== header ====== */
+
+.header {
+   font-size: 0;
+   padding: 20px;
+   background: linear-gradient(90deg, rgba(96, 96, 96, 1) 0%, rgba(252, 252, 252, 1) 50%, rgba(180, 180, 180, 1) 100%);
+}
+.header__logo {
+   display: inline-block;
+   width: 97px;
+   height: 97px;
+   overflow: hidden;
+   border-radius: 50%;
+   margin-right: 450px;
+   vertical-align: middle;
+}
+.header__logo img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: -30px 0;
+}
+.header__logo [alt] {
+   font-size: 16px;
+}
+.header__headline {
+   display: inline-block;
+   vertical-align: middle;
+   font-size: 45px;
+   font-weight: 700;
+   letter-spacing: 8px;
+   color: #913939;
+   text-shadow: 2px 2px 2px coral;
+}
+
+/* ===== title ===== */
+
+.products__title {
+   margin-bottom: 50px;
+}
+.title {
+   color: #1a1a1a;
+   font-size: 40px;
+   font-weight: 600;
+   line-height: 1.2;
+   text-align: center;
+}
+
+/* ===== car ===== */
+
+.car__container {
+   position: relative;
+   max-width: 1630px;
+   min-height: 920px;
+   background: url(../img/crossroads-of-roads.avif) no-repeat center/contain;
+}
+.car__block {
+   position: absolute;
+   width: 300px;
+   height: 150px;
+   transform: translateX(-120px);
+   animation: drive 16s linear 2 forwards;
+}
+.roof {
+   perspective: 170px;
+}
+.roof__item {
+   transform: rotateX(45deg);
+   position: absolute;
+   width: 280px;
+   height: 210px;
+   background: #69b343;
+   top: -155px;
+   left: 77px;
+   border-radius: 20px 20px 0 0;
+}
+.body {
+   position: absolute;
+   width: 550px;
+   height: 100px;
+   background: #69b343;
+   top: 40px;
+   left: 30px;
+   border-radius: 10px;
+   transform: skew(15deg);
+}
+.body::before {
+   content: "";
+   width: 500px;
+   height: 40px;
+   background-color: #69b343;
+   position: absolute;
+   right: -44px;
+   top: -40px;
+   border-radius: 50% 50% 100% 0% / 0% 100% 0% 100%;
+}
+.body::after {
+   content: "";
+   width: 55px;
+   height: 100px;
+   background: #69b343;
+   position: absolute;
+   right: -30px;
+   top: 0;
+   border-radius: 0% 100% 50% 50% / 100% 0% 100% 0%;
+   transform: skew(-15deg);
+}
+.window {
+   position: absolute;
+   background: #646464;
+   top: -110px;
+   transform: skew(-15deg);
+   border-radius: 5px;
+}
+.window.back {
+   left: 120px;
+   width: 80px;
+   height: 80px;
+   border: 1px solid white;
+}
+.window.back::before {
+   content: "";
+   width: 55px;
+   height: 79px;
+   border-radius: 5px 0 0 5px;
+   background: #646464;
+   transform: skew(-25deg);
+   position: absolute;
+   left: -20px;
+   border-bottom: 1px solid white;
+   border-left: 1px solid white;
+}
+.window.front {
+   left: 220px;
+   width: 60px;
+   height: 80px;
+   border: 1px solid white;
+}
+.window.front::before {
+   content: "";
+   width: 100px;
+   height: 49px;
+   background: #646464;
+   transform: skew(45deg);
+   position: absolute;
+   top: 30px;
+   left: 25px;
+   border-bottom: 1px solid white;
+}
+.window.front::after {
+   content: "";
+   width: 60px;
+   height: 79px;
+   border-radius: 0 5px 5px 0;
+   background: #646464;
+   transform: skew(60deg);
+   position: absolute;
+   right: -70px;
+   border-right: 2px solid white;
+   border-bottom: 1px solid white;
+}
+.door-handle {
+   position: absolute;
+   top: -18px;
+   left: 210px;
+   width: 40px;
+   height: 6px;
+   background: #000;
+   border-radius: 2px;
+}
+.door-line-back {
+   position: absolute;
+   bottom: 0;
+   left: 193px;
+   width: 2px;
+   height: 225px;
+   background: #000;
+   transform: skew(-15deg);
+}
+.door-line-back::before {
+   content: "";
+   width: 586px;
+   height: 1px;
+   background: #000;
+   position: absolute;
+   top: 124px;
+   left: -183px;
+}
+.door-line-front {
+   position: absolute;
+   bottom: 0;
+   left: 423px;
+   width: 2px;
+   height: 136px;
+   background: #000;
+   transform: skew(-15deg);
+}
+.headlight {
+   position: absolute;
+   z-index: 1;
+   width: 10px;
+   height: 30px;
+   background: #ffffff;
+   top: 0;
+   right: -40px;
+   border-radius: 5px 0 0 5px;
+   border: 1px solid rgb(0, 187, 255);
+   transform: skew(-15deg);
+}
+.headlight:hover {
+   background: rgb(0, 187, 255);
+   box-shadow:
+      0 0 30px 10px rgb(0, 187, 255),
+      0 0 80px 20px rgb(0, 187, 255),
+      40px 0 120px 30px rgb(0, 187, 255);
+   transition: 0.3s ease;
+}
+.taillight {
+   position: absolute;
+   width: 20px;
+   height: 30px;
+   background: rgb(202, 24, 24);
+   top: 3px;
+   left: 0;
+   border-radius: 5px;
+}
+.taillight:hover {
+   background: red;
+   box-shadow:
+      0 0 20px red,
+      0 0 40px red,
+      -10px 0 60px red;
+   transition: 0.3s ease;
+}
+.taillight:hover .text {
+   opacity: 1;
+   visibility: visible;
+}
+.wheel {
+   position: absolute;
+   width: 120px;
+   height: 120px;
+   background: #993838;
+   border: 15px dashed #333;
+   border-radius: 50%;
+   bottom: -30px;
+}
+.wheel::before {
+   content: "";
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background: #000;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.wheel:hover {
+   transform: rotate(360deg);
+   transition: all 1s;
+}
+.back-wheel {
+   left: 60px;
+}
+.front-wheel {
+   right: -280px;
+}
+
+/* ===== animation ===== */
+
+@keyframes drive {
+   0% {
+      left: 0;
+      top: 730px;
+      transform: rotate(0deg);
+   }
+   20% {
+      left: 1330px;
+      top: 730px;
+      transform: rotate(0deg);
+   }
+   25% {
+      transform: rotate(-90deg);
+   }
+   45% {
+      left: 1330px;
+      top: 30px;
+      transform: rotate(-90deg);
+   }
+   50% {
+      transform: rotate(-180deg);
+   }
+   70% {
+      left: 0;
+      top: 30px;
+      transform: rotate(-180deg);
+   }
+   75% {
+      transform: rotate(-270deg);
+   }
+   95% {
+      left: 0;
+      top: 730px;
+      transform: rotate(-270deg);
+   }
+   100% {
+      left: 0;
+      top: 730px;
+      transform: rotate(-360deg);
+   }
+}
+
+/* ===== footer ===== */
+
+.footer {
+   padding: 40px 0;
+   text-align: center;
+   font-size: 24px;
+   background: linear-gradient(90deg, rgba(96, 96, 96, 1) 0%, rgba(252, 252, 252, 1) 50%, rgba(180, 180, 180, 1) 100%);
+}
