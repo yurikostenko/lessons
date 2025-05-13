@@ -181,7 +181,7 @@ body {
    transition: background-color 0.3s;
 }
 .form__area {
-   height: 100px;
+   min-height: 100px;
    resize: vertical;
 }
 
@@ -205,6 +205,16 @@ body {
    display: flex;
    gap: 6px;
    align-items: center;
+   opacity: 1;
+}
+.product-link {
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   transition: opacity 0.3s;
+}
+.product-link:hover {
+   opacity: 0.7;
 }
 .form__order > * {
    margin-bottom: 24px;
