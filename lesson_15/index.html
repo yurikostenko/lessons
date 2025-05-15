@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+   <title>Lesson 15 Адаптивна верстка</title>
+</head>
+
+<body>
+
+   <div class="wrapper">
+
+      <header class="header">
+         <div class="header__container">
+            <div class="header__logo">
+               <img src="img/popeye.jpg" alt="Portrait of a summer wise sailor in a hat">
+            </div>
+            <h1 class="header__headline">Lesson_15</h1>
+         </div>
+      </header>
+
+      <main class="page">
+
+         <div class="page__products products">
+            <div class="products__container">
+
+               <div class="products__header hat">
+                  <h2 class="hat__title title">Featured product</h2>
+                  <a href="#" class="hat__link">View All</a>
+               </div>
+
+               <div class="products__cards">
+
+                  <div class="products__card product-card">
+                     <div class="product-card__sale">
+                        <p>Sale</p>
+                        <p>50%</p>
+                     </div>
+                     <a class="product-card__image" href="#">
+                        <img src="img/product/apple.avif" alt="Three green apples arranged on a plain white background">
+                     </a>
+                     <div class="product-card__block-icons block-icons">
+                        <a class="block-icons__link-heart link-heart" href="#">
+                           <img class="link-heart__item link-heart__item--default" src="img/product/heart-default.svg"
+                              alt="icon-heart-black">
+                           <img class="link-heart__item link-heart__item--hover" src="img/product/heart-hover.svg"
+                              alt="icon-heart-white">
+                           <img class="link-heart__item link-heart__item--active" src="img/product/heart-active.svg"
+                              alt="icon-heart-green">
+                        </a>
+                        <a class="block-icons__link-eye link-eye" href="#">
+                           <img class="link-eye__item link-eye__item--default" src="img/product/eye-default.svg"
+                              alt="icon-black-eye">
+                           <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                              alt="icon-white-eye">
+                        </a>
+                     </div>
+
+                     <div class="product-card__info">
+                        <div class="product-card__content">
+                           <h3 class="product-card__title"><a href="#">Green Apple</a></h3>
+                           <p>$14.99<span>$20.99</span></p>
+                           <div class="product-card__rating rating">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-grey.svg" alt="rating-stars-grey">
+                           </div>
+                        </div>
+                        <a class="product-card__icon icon" href="#">
+                           <img class="icon__item icon__item--default" src="img/product/icon.svg" alt="icon-buy-grey">
+                           <img class="icon__item icon__item--hover-card" src="img/product/icon-green.svg"
+                              alt="icon-buy-green">
+                           <img class="icon__item icon__item--hover-icon" src="img/product/icon-dark-green.svg"
+                              alt="icon-buy-dark-green">
+                        </a>
+                     </div>
+                  </div>
+
+                  <div class="products__card product-card">
+                     <a class="product-card__image" href="#">
+                        <img src="img/product/malta.avif"
+                           alt="Close-up of an orange with its peel, showcasing the vibrant texture and color of the fruit and its skin">
+                     </a>
+                     <div class="product-card__block-icons block-icons">
+                        <a class="block-icons__link-heart link-heart" href="#">
+                           <img class="link-heart__item link-heart__item--default" src="img/product/heart-default.svg"
+                              alt="icon-heart-black">
+                           <img class="link-heart__item link-heart__item--hover" src="img/product/heart-hover.svg"
+                              alt="icon-heart-white">
+                           <img class="link-heart__item link-heart__item--active" src="img/product/heart-active.svg"
+                              alt="icon-heart-green">
+                        </a>
+                        <a class="block-icons__link-eye link-eye" href="#">
+                           <img class="link-eye__item link-eye__item--default" src="img/product/eye-default.svg"
+                              alt="icon-black-eye">
+                           <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                              alt="icon-white-eye">
+                        </a>
+                     </div>
+
+                     <div class="product-card__info">
+                        <div class="product-card__content">
+                           <h3 class="product-card__title"><a href="#">Fresh Indian Malta</a></h3>
+                           <p>$20.00</p>
+                           <div class="product-card__rating rating">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-grey.svg" alt="rating-stars-grey">
+                           </div>
+                        </div>
+                        <a class="product-card__icon icon" href="#">
+                           <img class="icon__item icon__item--default" src="img/product/icon.svg" alt="icon-buy-grey">
+                           <img class="icon__item icon__item--hover-card" src="img/product/icon-green.svg"
+                              alt="icon-buy-green">
+                           <img class="icon__item icon__item--hover-icon" src="img/product/icon-dark-green.svg"
+                              alt="icon-buy-dark-green">
+                        </a>
+                     </div>
+                  </div>
+
+                  <div class="products__card product-card">
+                     <a class="product-card__image" href="#">
+                        <img src="img/product/cabbage.avif"
+                           alt="Fresh organic bok choy, with bright green leaves and crunchy white stems">
+                     </a>
+                     <div class="product-card__block-icons block-icons">
+                        <a class="block-icons__link-heart link-heart" href="#">
+                           <img class="link-heart__item link-heart__item--default" src="img/product/heart-default.svg"
+                              alt="icon-heart-black">
+                           <img class="link-heart__item link-heart__item--hover" src="img/product/heart-hover.svg"
+                              alt="icon-heart-white">
+                           <img class="link-heart__item link-heart__item--active" src="img/product/heart-active.svg"
+                              alt="icon-heart-green">
+                        </a>
+                        <a class="block-icons__link-eye link-eye" href="#">
+                           <img class="link-eye__item link-eye__item--default" src="img/product/eye-default.svg"
+                              alt="icon-black-eye">
+                           <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                              alt="icon-white-eye">
+                        </a>
+                     </div>
+
+                     <div class="product-card__info">
+                        <div class="product-card__content">
+                           <h3 class="product-card__title"><a href="#">Chanise Cabbage</a></h3>
+                           <p>$12.00</p>
+                           <div class="product-card__rating rating">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-grey.svg" alt="rating-stars-grey">
+                           </div>
+                        </div>
+                        <a class="product-card__icon icon" href="#">
+                           <img class="icon__item icon__item--default" src="img/product/icon.svg" alt="icon-buy-grey">
+                           <img class="icon__item icon__item--hover-card" src="img/product/icon-green.svg"
+                              alt="icon-buy-green">
+                           <img class="icon__item icon__item--hover-icon" src="img/product/icon-dark-green.svg"
+                              alt="icon-buy-dark-green">
+                        </a>
+                     </div>
+                  </div>
+
+                  <div class="products__card product-card">
+                     <a class="product-card__image" href="#">
+                        <img src="img/product/lettuce.avif"
+                           alt="A bunch of fresh green lettuce on a plain white background">
+                     </a>
+                     <div class="product-card__block-icons block-icons">
+                        <a class="block-icons__link-heart link-heart" href="#">
+                           <img class="link-heart__item link-heart__item--default" src="img/product/heart-default.svg"
+                              alt="icon-heart-black">
+                           <img class="link-heart__item link-heart__item--hover" src="img/product/heart-hover.svg"
+                              alt="icon-heart-white">
+                           <img class="link-heart__item link-heart__item--active" src="img/product/heart-active.svg"
+                              alt="icon-heart-green">
+                        </a>
+                        <a class="block-icons__link-eye link-eye" href="#">
+                           <img class="link-eye__item link-eye__item--default" src="img/product/eye-default.svg"
+                              alt="icon-black-eye">
+                           <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                              alt="icon-white-eye">
+                        </a>
+                     </div>
+
+                     <div class="product-card__info">
+                        <div class="product-card__content">
+                           <h3 class="product-card__title"><a href="#">Green Lettuce</a></h3>
+                           <p>$9.00</p>
+                           <div class="product-card__rating rating">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-grey.svg" alt="rating-stars-grey">
+                           </div>
+                        </div>
+                        <a class="product-card__icon icon" href="#">
+                           <img class="icon__item icon__item--default" src="img/product/icon.svg" alt="icon-buy-grey">
+                           <img class="icon__item icon__item--hover-card" src="img/product/icon-green.svg"
+                              alt="icon-buy-green">
+                           <img class="icon__item icon__item--hover-icon" src="img/product/icon-dark-green.svg"
+                              alt="icon-buy-dark-green">
+                        </a>
+                     </div>
+                  </div>
+
+                  <div class="products__card product-card">
+                     <a class="product-card__image" href="#">
+                        <img src="img/product/eggplant.avif"
+                           alt="Two fresh eggplants resting on a clean white background">
+                     </a>
+                     <div class="product-card__block-icons block-icons">
+                        <a class="block-icons__link-heart link-heart" href="#">
+                           <img class="link-heart__item link-heart__item--default" src="img/product/heart-default.svg"
+                              alt="icon-heart-black">
+                           <img class="link-heart__item link-heart__item--hover" src="img/product/heart-hover.svg"
+                              alt="icon-heart-white">
+                           <img class="link-heart__item link-heart__item--active" src="img/product/heart-active.svg"
+                              alt="icon-heart-green">
+                        </a>
+                        <a class="block-icons__link-eye link-eye" href="#">
+                           <img class="link-eye__item link-eye__item--default" src="img/product/eye-default.svg"
+                              alt="icon-black-eye">
+                           <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                              alt="icon-white-eye">
+                        </a>
+                     </div>
+
+                     <div class="product-card__info">
+                        <div class="product-card__content">
+                           <h3 class="product-card__title"><a href="#">Eggplant</a></h3>
+                           <p>$34.00</p>
+                           <div class="product-card__rating rating">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-orange.svg" alt="rating-stars-orange">
+                              <img class="rating__image" src="img/product/rating-grey.svg" alt="rating-stars-grey">
+                           </div>
+                        </div>
+                        <a class="product-card__icon icon" href="#">
+                           <img class="icon__item icon__item--default" src="img/product/icon.svg" alt="icon-buy-grey">
+                           <img class="icon__item icon__item--hover-card" src="img/product/icon-green.svg"
+                              alt="icon-buy-green">
+                           <img class="icon__item icon__item--hover-icon" src="img/product/icon-dark-green.svg"
+                              alt="icon-buy-dark-green">
+                        </a>
+                     </div>
+                  </div>
+
+               </div>
+
+            </div>
+         </div>
+
+         <div class="page__news news">
+            <div class="news__container">
+               <h2 class="news__title title title--center">Latest News</h2>
+
+               <div class="news__cards">
+
+                  <div class="news__card new-card">
+                     <div class="new-card__image-wrapper">
+                        <img class="new-card__image" src="img/news/image_1.avif"
+                           alt="A cluster of oranges arranged on a vibrant blue surface, showcasing their bright color contrast">
+                        <div class="new-card__date">
+                           <span class="new-card__number">18</span>
+                           <span class="new-card__month">Nov</span>
+                        </div>
+                     </div>
+                     <div class="new-card__content">
+                        <div class="new-card__meta meta">
+                           <a class="meta__link" href="#">
+                              <img src="img/news/tag.svg" alt="Category: Food">
+                              <span>Food</span>
+                           </a>
+                           <a class="meta__link" href="#">
+                              <img src="img/news/user.svg" alt="Author: Admin">
+                              <span>By Admin</span>
+                           </a>
+                           <a class="meta__link" href="#">
+                              <img src="img/news/chat.svg" alt="Comments">
+                              <span>65 Comments</span>
+                           </a>
+                        </div>
+                        <p>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</p>
+                        <a class="new-card__link" href="#">Read More</a>
+                     </div>
+                  </div>
+
+                  <div class="news__card new-card">
+                     <div class="new-card__image-wrapper">
+                        <img class="new-card__image" src="img/news/image_2.avif"
+                           alt="A plate featuring a sunny-side-up egg, sliced avocado, and fresh spinach leaves">
+                        <div class="new-card__date">
+                           <span class="new-card__number">29</span>
+                           <span class="new-card__month">Jan</span>
+                        </div>
+                     </div>
+                     <div class="new-card__content">
+                        <div class="new-card__meta meta">
+                           <a class="meta__link" href="#">
+                              <img src="img/news/tag.svg" alt="Category: Food">
+                              <span>Food</span>
+                           </a>
+                           <a class="meta__link" href="#">
+                              <img src="img/news/user.svg" alt="Author: Admin">
+                              <span>By Admin</span>
+                           </a>
+                           <a class="meta__link" href="#">
+                              <img src="img/news/chat.svg" alt="Comments">
+                              <span>65 Comments</span>
+                           </a>
+                        </div>
+                        <p>Eget lobortis lorem lacinia. Vivamus pharetra semper,</p>
+                        <a class="new-card__link" href="#">Read More</a>
+                     </div>
+                  </div>
+
+                  <div class="news__card new-card">
+                     <div class="new-card__image-wrapper">
+                        <img class="new-card__image" src="img/news/image_3.avif"
+                           alt="A bowl filled with colorful vegetables and fruits sits on a rustic wooden table">
+                        <div class="new-card__date">
+                           <span class="new-card__number">21</span>
+                           <span class="new-card__month">Feb</span>
+                        </div>
+                     </div>
+                     <div class="new-card__content">
+                        <div class="new-card__meta meta">
+                           <a class="meta__link" href="#">
+                              <img src="img/news/tag.svg" alt="Category: Food">
+                              <span>Food</span>
+                           </a>
+                           <a class="meta__link" href="#">
+                              <img src="img/news/user.svg" alt="Author: Admin">
+                              <span>By Admin</span>
+                           </a>
+                           <a class="meta__link" href="#">
+                              <img src="img/news/chat.svg" alt="Comments">
+                              <span>65 Comments</span>
+                           </a>
+                        </div>
+                        <p>Maecenas blandit risus elementum mauris malesuada.</p>
+                        <a class="new-card__link" href="#">Read More</a>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+
+      </main>
+
+   </div>
+
+   <footer class="footer">
+      <div class="footer__container">
+         <p>&copy; 2025 Yurii Kostenko.</p>
+      </div>
+   </footer>
+
+
+
+</body>
+
+</html>
