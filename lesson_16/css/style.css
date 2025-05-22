@@ -194,12 +194,18 @@ body {
    border-radius: 999px;
    background: #f26522;
    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+   transition: background-color 0.3s;
 }
 .page__button::after {
    content: "";
    background: url(../img/arrow.svg) center / contain no-repeat;
    width: 24px;
    height: 24px;
+}
+@media (any-hover: hover) {
+   .page__button:hover {
+      background-color: #dd4c09;
+   }
 }
 
 /* ===== footer ===== */
