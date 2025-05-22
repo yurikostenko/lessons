@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+@import url("reset.css");
+
+/* ===== Основні стилі ===== */
+
+body {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 500;
+}
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.wrapper > main {
+   flex-grow: 1;
+}
+[class*="__container"] {
+   margin: 0 auto;
+   padding: 0 15px;
+   max-width: 1230px;
+}
+
+/* ===== header ====== */
+
+.header {
+   background: rgba(255, 255, 255, 0.6);
+   backdrop-filter: blur(113.6500015258789px);
+   position: fixed;
+   z-index: 20;
+   top: 0;
+   left: 0;
+   right: 0;
+}
+.header__body {
+   display: flex;
+   justify-content: space-between;
+   gap: 30px;
+   align-items: center;
+   padding: 28px 0 25px 0;
+}
+.header__logo {
+   display: flex;
+   gap: 6px;
+   align-items: center;
+}
+.header__icon {
+   transition: transform 1.5s;
+}
+@media (any-hover: hover) {
+   .header__icon:hover {
+      transform: rotate(180deg);
+   }
+}
+.header__text {
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 1.5;
+   text-transform: uppercase;
+   transition: opacity 0.3s;
+}
+@media (any-hover: hover) {
+   .header__text:hover {
+      opacity: 0.6;
+   }
+}
+.menu__list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+   align-items: center;
+}
+.menu__link {
+   position: relative;
+   font-size: 13px;
+   line-height: 1.5;
+   text-transform: uppercase;
+   transition: color 0.3s;
+}
+.menu__link::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: -2px;
+   width: 100%;
+   height: 2px;
+   background-color: #5b5b5b;
+   transform: scaleX(0);
+   transition: transform 0.3s;
+}
+@media (any-hover: hover) {
+   .menu__link:hover {
+      color: #5b5b5b;
+   }
+   .menu__link:hover::after {
+      transform: scaleX(1);
+   }
+}
+.header__button {
+   display: flex;
+   padding: 8px 30px;
+   align-items: center;
+   gap: 8px;
+   color: #fff;
+   line-height: 1.5;
+   border-radius: 999px;
+   background-color: #f26522;
+   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+   transition: background-color 0.3s;
+}
+.header__button::after {
+   content: "";
+   background: url(../img/arrow.svg) center / contain no-repeat;
+   width: 24px;
+   height: 24px;
+}
+@media (any-hover: hover) {
+   .header__button:hover {
+      background-color: #dd4c09;
+   }
+}
+.icon-menu {
+   display: none;
+}
+
+/* ===== page ===== */
+
+.page {
+   overflow: hidden;
+   height: 100vh;
+   position: relative;
+}
+.page__image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: top;
+   aspect-ratio: 1728 / 606;
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+.page__container {
+   position: relative;
+   z-index: 2;
+   height: 100%;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.page__body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 24px;
+}
+.page__title {
+   flex-grow: 1;
+   max-width: 792px;
+   text-shadow:
+      -8.337px 55.023px 15.84px rgba(0, 0, 0, 0),
+      -5.836px 35.015px 14.173px rgba(0, 0, 0, 0.01),
+      -3.335px 20.008px 11.672px rgba(0, 0, 0, 0.02),
+      -1.667px 9.171px 9.171px rgba(0, 0, 0, 0.03),
+      0px 2.501px 5.002px rgba(0, 0, 0, 0.04);
+   font-size: 72.531px;
+   font-weight: 700;
+}
+.page__body p {
+   max-width: 594px;
+   text-shadow:
+      -7.962px 52.552px 15.129px rgba(0, 0, 0, 0),
+      -5.574px 33.442px 13.536px rgba(0, 0, 0, 0.01),
+      -3.185px 19.11px 11.147px rgba(0, 0, 0, 0.02),
+      -1.592px 8.759px 8.759px rgba(0, 0, 0, 0.03),
+      0px 2.389px 4.777px rgba(0, 0, 0, 0.04);
+   font-size: 17.517px;
+   font-weight: 400;
+   line-height: 1.3;
+}
+.page__button {
+   font-size: 20px;
+   line-height: 1.5;
+   display: flex;
+   padding: 14px 44px;
+   align-items: center;
+   gap: 8px;
+   border-radius: 999px;
+   background: #f26522;
+   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+.page__button::after {
+   content: "";
+   background: url(../img/arrow.svg) center / contain no-repeat;
+   width: 24px;
+   height: 24px;
+}
+
+/* ===== footer ===== */
+
+.footer {
+   padding: 40px 0;
+   text-align: center;
+   font-size: 24px;
+   background: linear-gradient(90deg, rgba(96, 96, 96, 1) 0%, rgba(252, 252, 252, 1) 50%, rgba(180, 180, 180, 1) 100%);
+}
