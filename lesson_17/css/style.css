@@ -659,9 +659,11 @@ body {
 }
 .card-flower__image {
    aspect-ratio: 369 / 378;
+   overflow: hidden;
 }
 .card-flower__image--big {
    aspect-ratio: 400 / 426;
+   overflow: hidden;
 }
 .card-flower__image img {
    display: block;
