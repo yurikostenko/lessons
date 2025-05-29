@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+   <title>Lesson 17 Grid</title>
+</head>
+
+<body>
+
+   <div class="wrapper">
+
+      <header class="header">
+         <div class="header__container">
+            <div class="header__logo">
+               <img src="img/popeye.jpg" alt="Portrait of a summer wise sailor in a hat">
+            </div>
+            <h1 class="header__headline">Lesson_17</h1>
+         </div>
+      </header>
+
+      <main class="page">
+
+         <div class="page__products products">
+            <div class="products__container">
+
+               <div class="products__header hat">
+                  <span>Products</span>
+                  <h2 class="hat__title">Our Featured Products</h2>
+               </div>
+
+               <div class="products__featured">
+
+                  <div class="products__cards">
+
+                     <div class="products__card product-sale">
+                        <picture>
+                           <source srcset="img/product/image-4x.avif" media="(min-width: 992px)">
+                           <source srcset="img/product/image-3x.avif" media="(min-width: 480px)">
+                           <source srcset="img/product/image-2x.avif" media="(min-width: 375px)">
+                           <source srcset="img/product/image-1x.avif" media="(max-width: 374.98px)">
+                           <img class="product-sale__bg" src="img/product/image-2x.avif"
+                              alt="Fresh vegetables and fruits in a paper bag on a white background, showcasing a colorful assortment of produce">
+                        </picture>
+                        <div class="product-sale__body">
+                           <h3 class="product-sale__title">Summer Sale</h3>
+                           <span>75% off</span>
+                           <a class="product-sale__link" href="#">Shop Now</a>
+                        </div>
+                     </div>
+
+                     <div class="products__card product-card">
+                        <!-- <div class="product-card__action">
+                           <div class="product-card__sale">
+                              <p>Sale</p>
+                              <p>50%</p>
+                           </div>
+                        </div> -->
+                        <a class="product-card__image" href="#">
+                           <img src="img/product/cabbage.avif"
+                              alt="Fresh organic bok choy, with bright green leaves and crunchy white stems">
+                        </a>
+                        <div class="product-card__block-icons block-icons">
+                           <a class="block-icons__link-heart link-heart" href="#">
+                              <img class="link-heart__item link-heart__item--default"
+                                 src="img/product/heart-default.svg" alt="icon-heart-black">
+                              <img class="link-heart__item link-heart__item--hover" src="img/product/heart-hover.svg"
+                                 alt="icon-heart-white">
+                              <img class="link-heart__item link-heart__item--active" src="img/product/heart-active.svg"
+                                 alt="icon-heart-green">
+                           </a>
+                           <a class="block-icons__link-eye link-eye" href="#">
+                              <img class="link-eye__item link-eye__item--default" src="img/product/eye-default.svg"
+                                 alt="icon-black-eye">
+                              <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                                 alt="icon-white-eye">
+                           </a>
+                        </div>
+
+                        <div class="product-card__info">
+                           <div class="product-card__content">
+                              <h3 class="product-card__title"><a href="#">Chanise Cabbage</a>
+                              </h3>
+                              <p>$14.99</p>
+                              <div class="product-card__rating rating">
+                                 <img class="rating__image" src="img/product/rating-orange.svg"
+                                    alt="rating-stars-orange">
+                                 <img class="rating__image" src="img/product/rating-orange.svg"
+                                    alt="rating-stars-orange">
+                                 <img class="rating__image" src="img/product/rating-orange.svg"
+                                    alt="rating-stars-orange">
+                                 <img class="rating__image" src="img/product/rating-orange.svg"
+                                    alt="rating-stars-orange">
+                                 <img class="rating__image" src="img/product/rating-grey.svg" alt="rating-stars-grey">
+                              </div>
+                           </div>
+                           <a class="product-card__icon icon" href="#">
+                              <img class="icon__item icon__item--default" src="img/product/icon.svg"
+                                 alt="icon-buy-grey">
+                              <img class="icon__item icon__item--hover-card" src="img/product/icon-green.svg"
+                                 alt="icon-buy-green">
+                              <img class="icon__item icon__item--hover-icon" src="img/product/icon-dark-green.svg"
+                                 alt="icon-buy-dark-green">
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="products__card product-card">
+                        <!-- <div class="product-card__action">
+                           <div class="product-card__sale">
+                              <p>Sale</p>
+                              <p>50%</p>
+                           </div>
+                        </div> -->
+                        <a class="product-card__image" href="#">
+                           <img src="img/product/lettuce.avif"
+                              alt="A bunch of fresh green lettuce on a plain white background">
+                        </a>
+                        <div class="product-card__block-icons block-icons">
+                           <a class="block-icons__link-heart link-heart" href="#">
+                              <img class="link-heart__item link-heart__item--default"
+                                 src="img/product/heart-default.svg" alt="icon-heart-black">
+                              <img class="link-heart__item link-heart__item--hover" src="img/product/heart-hover.svg"
+                                 alt="icon-heart-white">
+                              <img class="link-heart__item link-heart__item--active" src="img/product/heart-active.svg"
+                                 alt="icon-heart-green">
+                           </a>
+                           <a class="block-icons__link-eye link-eye" href="#">
+                              <img class="link-eye__item link-eye__item--default" src="img/product/eye-default.svg"
+                                 alt="icon-black-eye">
+                              <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                                 alt="icon-white-eye">
+                           </a>
+                        </div>
+
+                        <div class="product-card__info">
+                           <div class="product-card__content">
+                              <h3 class="product-card__title"><a href="#">Green Lettuce</a></h3>
+                              <p>$14.99</p>
+                              <div class="product-card__rating rating">
+                                 <img class="rating__image" src="img/product/rating-orange.svg"
+                                    alt="rating-stars-orange">
+                                 <img class="rating__image" src="img/product/rating-orange.svg"
+                                    alt="rating-stars-orange">
+                                 <img class="rating__image" src="img/product/rating-orange.svg"
+                                    alt="rating-stars-orange">
+                                 <img class="rating__image" src="img/product/rating-orange.svg"
+                                    alt="rating-stars-orange">
+                                 <img class="rating__image" src="img/product/rating-grey.svg" alt="rating-stars-grey">
+                              </div>
+                           </div>
+                           <a class="product-card__icon icon" href="#">
+                              <img class="icon__item icon__item--default" src="img/product/icon.svg"
+                                 alt="icon-buy-grey">
+                              <img class="icon__item icon__item--hover-card" src="img/product/icon-green.svg"
+                                 alt="icon-buy-green">
+                              <img class="icon__item icon__item--hover-icon" src="img/product/icon-dark-green.svg"
+                                 alt="icon-buy-dark-green">
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="products__card product-card">
+                        <!-- <div class="product-card__action">
+                           <div class="product-card__sale">
+                              <p>Sale</p>
+                              <p>50%</p>
+                           </div>
+                        </div> -->
+                        <a class="product-card__image" href="#">
+                           <img src="img/product/chili.avif"
+                              alt="Green chili peppers arranged on a white background, showcasing their vibrant color and fresh appearance">
+                        </a>
+                        <div class="product-card__block-icons block-icons">
+                           <a class="block-icons__link-heart link-heart" href="#">
+                              <img class="link-heart__item link-heart__item--default"
+                                 src="img/product/heart-default.svg" alt="icon-heart-black">
+                              <img class="link-heart__item link-heart__item--hover" src="img/product/heart-hover.svg"
+                                 alt="icon-heart-white">
+                              <img class="link-heart__item link-heart__item--active" src="img/product/heart-active.svg"
+                                 alt="icon-heart-green">
+                           </a>
+                           <a class="block-icons__link-eye link-eye" href="#">
+                              <img class="link-eye__item link-eye__item--default" src="img/product/eye-default.svg"
+                                 alt="icon-black-eye">
+                              <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                                 alt="icon-white-eye">
+                           </a>
+                        </div>
+
+                        <div class="product-card__info">
+                           <div class="product-card__content">
+                              <h3 class="product-card__title"><a href="#">Green Chili</a></h3>
+                              <p>$14.99</p>
+                              <div class="product-card__rating rating">
+                                 <img class="rating__image" src="img/product/rating-orange.svg"
+                                    alt="rating-stars-orange">
+                                 <img class="rating__image" src="img/product/rating-orange.svg"
+                                    alt="rating-stars-orange">
+                                 <img class="rating__image" src="img/product/rating-orange.svg"
+                                    alt="rating-stars-orange">
+                                 <img class="rating__image" src="img/product/rating-orange.svg"
+                                    alt="rating-stars-orange">
+                                 <img class="rating__image" src="img/product/rating-grey.svg" alt="rating-stars-grey">
+                              </div>
+                           </div>
+                           <a class="product-card__icon icon" href="#">
+                              <img class="icon__item icon__item--default" src="img/product/icon.svg"
+                                 alt="icon-buy-grey">
+                              <img class="icon__item icon__item--hover-card" src="img/product/icon-green.svg"
+                                 alt="icon-buy-green">
+                              <img class="icon__item icon__item--hover-icon" src="img/product/icon-dark-green.svg"
+                                 alt="icon-buy-dark-green">
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="products__card product-card">
+                        <!-- <div class="product-card__action">
+                           <div class="product-card__sale">
+                              <p>Sale</p>
+                              <p>50%</p>
+                           </div>
+                        </div> -->
+                        <a class="product-card__image" href="#">
+                           <img src="img/product/corn.avif"
+                              alt="Two ears of corn displayed on a plain white background, showcasing their vibrant yellow kernels and green husks">
+                        </a>
+                        <div class="product-card__block-icons block-icons">
+                           <a class="block-icons__link-heart link-heart" href="#">
+                              <img class="link-heart__item link-heart__item--default"
+                                 src="img/product/heart-default.svg" alt="icon-heart-black">
+                              <img class="link-heart__item link-heart__item--hover" src="img/product/heart-hover.svg"
+                                 alt="icon-heart-white">
+                              <img class="link-heart__item link-heart__item--active" src="img/product/heart-active.svg"
+                                 alt="icon-heart-green">
+                           </a>
+                           <a class="block-icons__link-eye link-eye" href="#">
+                              <img class="link-eye__item link-eye__item--default" src="img/product/eye-default.svg"
+                                 alt="icon-black-eye">
+                              <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                                 alt="icon-white-eye">
+                           </a>
+                        </div>
+
+                        <div class="product-card__info">
+                           <div class="product-card__content">
+                              <h3 class="product-card__title"><a href="#">Corn</a></h3>
+                              <p>$14.99</p>
+                              <div class="product-card__rating rating">
+                                 <img class="rating__image" src="img/product/rating-orange.svg"
+                                    alt="rating-stars-orange">
+                                 <img class="rating__image" src="img/product/rating-orange.svg"
+                                    alt="rating-stars-orange">
+                                 <img class="rating__image" src="img/product/rating-orange.svg"
+                                    alt="rating-stars-orange">
+                                 <img class="rating__image" src="img/product/rating-orange.svg"
+                                    alt="rating-stars-orange">
+                                 <img class="rating__image" src="img/product/rating-grey.svg" alt="rating-stars-grey">
+                              </div>
+                           </div>
+                           <a class="product-card__icon icon" href="#">
+                              <img class="icon__item icon__item--default" src="img/product/icon.svg"
+                                 alt="icon-buy-grey">
+                              <img class="icon__item icon__item--hover-card" src="img/product/icon-green.svg"
+                                 alt="icon-buy-green">
+                              <img class="icon__item icon__item--hover-icon" src="img/product/icon-dark-green.svg"
+                                 alt="icon-buy-dark-green">
+                           </a>
+                        </div>
+                     </div>
+
+                  </div>
+
+                  <div class="products__showcase showcase">
+
+                     <div class="showcase__card">
+                        <h3 class="showcase__title">Hot Deals</h3>
+                        <div class="showcase__column">
+
+                           <div class="showcase__item">
+                              <a class="showcase__image" href="#">
+                                 <img src="img/product/apple-s.avif"
+                                    alt="Three green apples arranged on a plain white background">
+                              </a>
+                              <div class="showcase__content">
+                                 <h4 class="showcase__subtitle"><a href="#">Green Apple</a></h4>
+                                 <div class="showcase__meta">
+                                    <p>$14.99</p>
+
+                                    <div class="showcase__rating rating">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-grey.svg"
+                                          alt="rating-stars-grey">
+                                    </div>
+                                 </div>
+
+                                 <div class="showcase__block-icons block-icons block-icons--row">
+                                    <a class="block-icons__icon icon" href="#">
+                                       <img class="icon__item icon__item--default-card" src="img/product/icon-green.svg"
+                                          alt="icon-buy-green">
+                                       <img class="icon__item icon__item--hover-icon"
+                                          src="img/product/icon-dark-green.svg" alt="icon-buy-dark-green">
+                                    </a>
+
+                                    <a class="block-icons__link-eye link-eye" href="#">
+                                       <img class="link-eye__item link-eye__item--default"
+                                          src="img/product/eye-default.svg" alt="icon-black-eye">
+                                       <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                                          alt="icon-white-eye">
+                                    </a>
+
+                                    <a class="block-icons__link-heart link-heart" href="#">
+                                       <img class="link-heart__item link-heart__item--default"
+                                          src="img/product/heart-default.svg" alt="icon-heart-black">
+                                       <img class="link-heart__item link-heart__item--hover"
+                                          src="img/product/heart-hover.svg" alt="icon-heart-white">
+                                       <img class="link-heart__item link-heart__item--active"
+                                          src="img/product/heart-active.svg" alt="icon-heart-green">
+                                    </a>
+                                 </div>
+
+                              </div>
+                           </div>
+
+                           <div class="showcase__item">
+                              <a class="showcase__image" href="#">
+                                 <img src="img/product/malta-s.avif"
+                                    alt="Orange fruit placed on a white background, highlighting its vibrant color and smooth texture">
+                              </a>
+                              <div class="showcase__content">
+                                 <h4 class="showcase__subtitle"><a href="#">Indian Malta</a></h4>
+                                 <div class="showcase__meta">
+                                    <p>$14.99</p>
+
+                                    <div class="showcase__rating rating">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-grey.svg"
+                                          alt="rating-stars-grey">
+                                    </div>
+                                 </div>
+
+                                 <div class="showcase__block-icons block-icons block-icons--row">
+                                    <a class="block-icons__icon icon" href="#">
+                                       <img class="icon__item icon__item--default-card" src="img/product/icon-green.svg"
+                                          alt="icon-buy-green">
+                                       <img class="icon__item icon__item--hover-icon"
+                                          src="img/product/icon-dark-green.svg" alt="icon-buy-dark-green">
+                                    </a>
+
+                                    <a class="block-icons__link-eye link-eye" href="#">
+                                       <img class="link-eye__item link-eye__item--default"
+                                          src="img/product/eye-default.svg" alt="icon-black-eye">
+                                       <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                                          alt="icon-white-eye">
+                                    </a>
+
+                                    <a class="block-icons__link-heart link-heart" href="#">
+                                       <img class="link-heart__item link-heart__item--default"
+                                          src="img/product/heart-default.svg" alt="icon-heart-black">
+                                       <img class="link-heart__item link-heart__item--hover"
+                                          src="img/product/heart-hover.svg" alt="icon-heart-white">
+                                       <img class="link-heart__item link-heart__item--active"
+                                          src="img/product/heart-active.svg" alt="icon-heart-green">
+                                    </a>
+                                 </div>
+
+                              </div>
+                           </div>
+
+                           <div class="showcase__item">
+                              <a class="showcase__image" href="#">
+                                 <img src="img/product/lettuce-s.avif"
+                                    alt="A bunch of fresh green lettuce on a plain white background">
+                              </a>
+                              <div class="showcase__content">
+                                 <h4 class="showcase__subtitle"><a href="#">Green Lettuce</a></h4>
+                                 <div class="showcase__meta">
+                                    <p>$14.99</p>
+
+                                    <div class="showcase__rating rating">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-grey.svg"
+                                          alt="rating-stars-grey">
+                                    </div>
+                                 </div>
+
+                                 <div class="showcase__block-icons block-icons block-icons--row">
+                                    <a class="block-icons__icon icon" href="#">
+                                       <img class="icon__item icon__item--default-card" src="img/product/icon-green.svg"
+                                          alt="icon-buy-green">
+                                       <img class="icon__item icon__item--hover-icon"
+                                          src="img/product/icon-dark-green.svg" alt="icon-buy-dark-green">
+                                    </a>
+
+                                    <a class="block-icons__link-eye link-eye" href="#">
+                                       <img class="link-eye__item link-eye__item--default"
+                                          src="img/product/eye-default.svg" alt="icon-black-eye">
+                                       <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                                          alt="icon-white-eye">
+                                    </a>
+
+                                    <a class="block-icons__link-heart link-heart" href="#">
+                                       <img class="link-heart__item link-heart__item--default"
+                                          src="img/product/heart-default.svg" alt="icon-heart-black">
+                                       <img class="link-heart__item link-heart__item--hover"
+                                          src="img/product/heart-hover.svg" alt="icon-heart-white">
+                                       <img class="link-heart__item link-heart__item--active"
+                                          src="img/product/heart-active.svg" alt="icon-heart-green">
+                                    </a>
+                                 </div>
+
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="showcase__card">
+                        <h3 class="showcase__title">Best Seller</h3>
+                        <div class="showcase__column">
+
+                           <div class="showcase__item">
+                              <a class="showcase__image" href="#">
+                                 <img src="img/product/eggplant-s.avif"
+                                    alt="Two fresh eggplants resting on a clean white background, showcasing their deep purple color and smooth texture">
+                              </a>
+                              <div class="showcase__content">
+                                 <h4 class="showcase__subtitle"><a href="#">Eggplant</a></h4>
+                                 <div class="showcase__meta">
+                                    <p>$14.99</p>
+
+                                    <div class="showcase__rating rating">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-grey.svg"
+                                          alt="rating-stars-grey">
+                                    </div>
+                                 </div>
+
+                                 <div class="showcase__block-icons block-icons block-icons--row">
+                                    <a class="block-icons__icon icon" href="#">
+                                       <img class="icon__item icon__item--default-card" src="img/product/icon-green.svg"
+                                          alt="icon-buy-green">
+                                       <img class="icon__item icon__item--hover-icon"
+                                          src="img/product/icon-dark-green.svg" alt="icon-buy-dark-green">
+                                    </a>
+
+                                    <a class="block-icons__link-eye link-eye" href="#">
+                                       <img class="link-eye__item link-eye__item--default"
+                                          src="img/product/eye-default.svg" alt="icon-black-eye">
+                                       <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                                          alt="icon-white-eye">
+                                    </a>
+
+                                    <a class="block-icons__link-heart link-heart" href="#">
+                                       <img class="link-heart__item link-heart__item--default"
+                                          src="img/product/heart-default.svg" alt="icon-heart-black">
+                                       <img class="link-heart__item link-heart__item--hover"
+                                          src="img/product/heart-hover.svg" alt="icon-heart-white">
+                                       <img class="link-heart__item link-heart__item--active"
+                                          src="img/product/heart-active.svg" alt="icon-heart-green">
+                                    </a>
+                                 </div>
+
+                              </div>
+                           </div>
+
+                           <div class="showcase__item">
+                              <a class="showcase__image" href="#">
+                                 <img src="img/product/capsicum-s.avif"
+                                    alt="Green chili placed on a plain white background, showcasing its vibrant color and smooth texture">
+                              </a>
+                              <div class="showcase__content">
+                                 <h4 class="showcase__subtitle"><a href="#">Red Capsicum</a></h4>
+                                 <div class="showcase__meta">
+                                    <p>$14.99<span>$20.99</span></p>
+
+                                    <div class="showcase__rating rating">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-grey.svg"
+                                          alt="rating-stars-grey">
+                                    </div>
+                                 </div>
+
+                                 <div class="showcase__block-icons block-icons block-icons--row">
+                                    <a class="block-icons__icon icon" href="#">
+                                       <img class="icon__item icon__item--default-card" src="img/product/icon-green.svg"
+                                          alt="icon-buy-green">
+                                       <img class="icon__item icon__item--hover-icon"
+                                          src="img/product/icon-dark-green.svg" alt="icon-buy-dark-green">
+                                    </a>
+
+                                    <a class="block-icons__link-eye link-eye" href="#">
+                                       <img class="link-eye__item link-eye__item--default"
+                                          src="img/product/eye-default.svg" alt="icon-black-eye">
+                                       <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                                          alt="icon-white-eye">
+                                    </a>
+
+                                    <a class="block-icons__link-heart link-heart" href="#">
+                                       <img class="link-heart__item link-heart__item--default"
+                                          src="img/product/heart-default.svg" alt="icon-heart-black">
+                                       <img class="link-heart__item link-heart__item--hover"
+                                          src="img/product/heart-hover.svg" alt="icon-heart-white">
+                                       <img class="link-heart__item link-heart__item--active"
+                                          src="img/product/heart-active.svg" alt="icon-heart-green">
+                                    </a>
+                                 </div>
+
+                              </div>
+                           </div>
+
+                           <div class="showcase__item">
+                              <a class="showcase__image" href="#">
+                                 <img src="img/product/tomatos-s.avif"
+                                    alt="Three ripe tomatoes displayed on a clean white background">
+                              </a>
+                              <div class="showcase__content">
+                                 <h4 class="showcase__subtitle"><a href="#">Red Tomatos</a></h4>
+                                 <div class="showcase__meta">
+                                    <p>$14.99</p>
+
+                                    <div class="showcase__rating rating">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-grey.svg"
+                                          alt="rating-stars-grey">
+                                    </div>
+                                 </div>
+
+                                 <div class="showcase__block-icons block-icons block-icons--row">
+                                    <a class="block-icons__icon icon" href="#">
+                                       <img class="icon__item icon__item--default-card" src="img/product/icon-green.svg"
+                                          alt="icon-buy-green">
+                                       <img class="icon__item icon__item--hover-icon"
+                                          src="img/product/icon-dark-green.svg" alt="icon-buy-dark-green">
+                                    </a>
+
+                                    <a class="block-icons__link-eye link-eye" href="#">
+                                       <img class="link-eye__item link-eye__item--default"
+                                          src="img/product/eye-default.svg" alt="icon-black-eye">
+                                       <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                                          alt="icon-white-eye">
+                                    </a>
+
+                                    <a class="block-icons__link-heart link-heart" href="#">
+                                       <img class="link-heart__item link-heart__item--default"
+                                          src="img/product/heart-default.svg" alt="icon-heart-black">
+                                       <img class="link-heart__item link-heart__item--hover"
+                                          src="img/product/heart-hover.svg" alt="icon-heart-white">
+                                       <img class="link-heart__item link-heart__item--active"
+                                          src="img/product/heart-active.svg" alt="icon-heart-green">
+                                    </a>
+                                 </div>
+
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="showcase__card">
+                        <h3 class="showcase__title">Top Rated</h3>
+                        <div class="showcase__column">
+
+                           <div class="showcase__item">
+                              <a class="showcase__image" href="#">
+                                 <img src="img/product/potatos-s.avif"
+                                    alt="Three yellow potatoes arranged on a clean white background">
+                              </a>
+                              <div class="showcase__content">
+                                 <h4 class="showcase__subtitle"><a href="#">Big Potatos</a></h4>
+                                 <div class="showcase__meta">
+                                    <p>$14.99</p>
+
+                                    <div class="showcase__rating rating">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-grey.svg"
+                                          alt="rating-stars-grey">
+                                    </div>
+                                 </div>
+
+                                 <div class="showcase__block-icons block-icons block-icons--row">
+                                    <a class="block-icons__icon icon" href="#">
+                                       <img class="icon__item icon__item--default-card" src="img/product/icon-green.svg"
+                                          alt="icon-buy-green">
+                                       <img class="icon__item icon__item--hover-icon"
+                                          src="img/product/icon-dark-green.svg" alt="icon-buy-dark-green">
+                                    </a>
+
+                                    <a class="block-icons__link-eye link-eye" href="#">
+                                       <img class="link-eye__item link-eye__item--default"
+                                          src="img/product/eye-default.svg" alt="icon-black-eye">
+                                       <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                                          alt="icon-white-eye">
+                                    </a>
+
+                                    <a class="block-icons__link-heart link-heart" href="#">
+                                       <img class="link-heart__item link-heart__item--default"
+                                          src="img/product/heart-default.svg" alt="icon-heart-black">
+                                       <img class="link-heart__item link-heart__item--hover"
+                                          src="img/product/heart-hover.svg" alt="icon-heart-white">
+                                       <img class="link-heart__item link-heart__item--active"
+                                          src="img/product/heart-active.svg" alt="icon-heart-green">
+                                    </a>
+                                 </div>
+
+                              </div>
+                           </div>
+
+                           <div class="showcase__item">
+                              <a class="showcase__image" href="#">
+                                 <img src="img/product/corn-s.avif"
+                                    alt="Two ears of corn displayed on a plain white background, showcasing their vibrant yellow kernels and green husks">
+                              </a>
+                              <div class="showcase__content">
+                                 <h4 class="showcase__subtitle"><a href="#">Corn</a></h4>
+                                 <div class="showcase__meta">
+                                    <p>$14.99<span>$20.99</span></p>
+
+                                    <div class="showcase__rating rating">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-grey.svg"
+                                          alt="rating-stars-grey">
+                                    </div>
+                                 </div>
+
+                                 <div class="showcase__block-icons block-icons block-icons--row">
+                                    <a class="block-icons__icon icon" href="#">
+                                       <img class="icon__item icon__item--default-card" src="img/product/icon-green.svg"
+                                          alt="icon-buy-green">
+                                       <img class="icon__item icon__item--hover-icon"
+                                          src="img/product/icon-dark-green.svg" alt="icon-buy-dark-green">
+                                    </a>
+
+                                    <a class="block-icons__link-eye link-eye" href="#">
+                                       <img class="link-eye__item link-eye__item--default"
+                                          src="img/product/eye-default.svg" alt="icon-black-eye">
+                                       <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                                          alt="icon-white-eye">
+                                    </a>
+
+                                    <a class="block-icons__link-heart link-heart" href="#">
+                                       <img class="link-heart__item link-heart__item--default"
+                                          src="img/product/heart-default.svg" alt="icon-heart-black">
+                                       <img class="link-heart__item link-heart__item--hover"
+                                          src="img/product/heart-hover.svg" alt="icon-heart-white">
+                                       <img class="link-heart__item link-heart__item--active"
+                                          src="img/product/heart-active.svg" alt="icon-heart-green">
+                                    </a>
+                                 </div>
+
+                              </div>
+                           </div>
+
+                           <div class="showcase__item">
+                              <a class="showcase__image" href="#">
+                                 <img src="img/product/cauliflower-s.avif"
+                                    alt="Cauliflower head on a plain white background, showcasing its textured florets and green leaves">
+                              </a>
+                              <div class="showcase__content">
+                                 <h4 class="showcase__subtitle"><a href="#">Fresh cauliflower</a></h4>
+                                 <div class="showcase__meta">
+                                    <p>$14.99</p>
+
+                                    <div class="showcase__rating rating">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-orange.svg"
+                                          alt="rating-stars-orange">
+                                       <img class="rating__image" src="img/product/rating-grey.svg"
+                                          alt="rating-stars-grey">
+                                    </div>
+                                 </div>
+
+                                 <div class="showcase__block-icons block-icons block-icons--row">
+                                    <a class="block-icons__icon icon" href="#">
+                                       <img class="icon__item icon__item--default-card" src="img/product/icon-green.svg"
+                                          alt="icon-buy-green">
+                                       <img class="icon__item icon__item--hover-icon"
+                                          src="img/product/icon-dark-green.svg" alt="icon-buy-dark-green">
+                                    </a>
+
+                                    <a class="block-icons__link-eye link-eye" href="#">
+                                       <img class="link-eye__item link-eye__item--default"
+                                          src="img/product/eye-default.svg" alt="icon-black-eye">
+                                       <img class="link-eye__item link-eye__item--hover" src="img/product/eye-hover.svg"
+                                          alt="icon-white-eye">
+                                    </a>
+
+                                    <a class="block-icons__link-heart link-heart" href="#">
+                                       <img class="link-heart__item link-heart__item--default"
+                                          src="img/product/heart-default.svg" alt="icon-heart-black">
+                                       <img class="link-heart__item link-heart__item--hover"
+                                          src="img/product/heart-hover.svg" alt="icon-heart-white">
+                                       <img class="link-heart__item link-heart__item--active"
+                                          src="img/product/heart-active.svg" alt="icon-heart-green">
+                                    </a>
+                                 </div>
+
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="showcase__card sale-showcase">
+                        <picture>
+                           <source srcset="img/product/image_2-4x.avif" media="(min-width: 992px)">
+                           <source srcset="img/product/image_2-3x.avif" media="(min-width: 480px)">
+                           <source srcset="img/product/image_2-2x.avif" media="(min-width: 375px)">
+                           <source srcset="img/product/image_2-1x.avif" media="(max-width: 374.98px)">
+                           <img class="sale-showcase__bg" src="img/product/image_2-2x.avif"
+                              alt="A bouquet of red and green apples on a bright yellow background">
+                        </picture>
+                        <div class="sale-showcase__body">
+                           <h3 class="sale-showcase__title">Hot Sale</h3>
+                           <span><span>Save 37%</span> on Every Order</span>
+                           <a class="sale-showcase__link" href="#">Shop Now</a>
+                        </div>
+                     </div>
+
+                  </div>
+
+               </div>
+
+            </div>
+         </div>
+
+         <div class="page__flowers flowers">
+            <div class="flowers__container">
+
+               <div class="flowers__catalog-grid">
+
+                  <div class="flowers__column-grid">
+                     <div class="flowers__column-big-wrap">
+                        <div class="card-flower card-flower--big">
+                           <a class="card-flower__image card-flower__image--big" href="#">
+                              <img src="img/flowers/petals.avif"
+                                 alt="A vase filled with vibrant purple and pink flowers">
+                           </a>
+                           <div class="card-flower__panel">
+                              <h3 class="card-flower__title"><a href="#">Enchanted Petals</a></h3>
+                              <div class="card-flower__actions">
+                                 <a href="#">
+                                    <img src="img/flowers/heart.svg" alt="heart-icon">
+                                 </a>
+                                 <a href="#">
+                                    <img src="img/flowers/basket.svg" alt="basket-icon">
+                                 </a>
+                              </div>
+                           </div>
+                           <span>70 Euro</span>
+                        </div>
+
+                        <div class="card-flower card-flower--big">
+                           <a class="card-flower__image card-flower__image--big" href="#">
+                              <img src="img/flowers/harmony.avif"
+                                 alt="A vase filled with colorful flowers sits elegantly on a wooden table">
+                           </a>
+                           <div class="card-flower__panel">
+                              <h3 class="card-flower__title"><a href="#">Floral Harmony</a></h3>
+                              <div class="card-flower__actions">
+                                 <a href="#">
+                                    <img src="img/flowers/heart.svg" alt="heart-icon">
+                                 </a>
+                                 <a href="#">
+                                    <img src="img/flowers/basket.svg" alt="basket-icon">
+                                 </a>
+                              </div>
+                           </div>
+                           <span>80 Euro</span>
+                        </div>
+                     </div>
+
+                     <a class="flowers__button" href="#">Open More</a>
+                  </div>
+
+                  <div class="flowers__grid-main">
+                     <h2 class="flowers__title">Catalog of Floral Delights for Every Occasion</h2>
+
+                     <div class="card-flower">
+                        <a class="card-flower__image" href="#">
+                           <img src="img/flowers/meadows.avif" alt="">
+                        </a>
+                        <div class="card-flower__panel">
+                           <h3 class="card-flower__title"><a href="#">Whispering Meadows</a></h3>
+                           <div class="card-flower__actions">
+                              <a href="#">
+                                 <img src="img/flowers/heart.svg" alt="heart-icon">
+                              </a>
+                              <a href="#">
+                                 <img src="img/flowers/basket.svg" alt="basket-icon">
+                              </a>
+                           </div>
+                        </div>
+                        <span>45 Euro</span>
+                     </div>
+
+                     <div class="card-flower">
+                        <a class="card-flower__image" href="#">
+                           <img src="img/flowers/bliss.avif" alt="">
+                        </a>
+                        <div class="card-flower__panel">
+                           <h3 class="card-flower__title"><a href="#">Serene Bliss</a></h3>
+                           <div class="card-flower__actions">
+                              <a href="#">
+                                 <img src="img/flowers/heart.svg" alt="heart-icon">
+                              </a>
+                              <a href="#">
+                                 <img src="img/flowers/basket.svg" alt="basket-icon">
+                              </a>
+                           </div>
+                        </div>
+                        <span>60 Euro</span>
+                     </div>
+
+                     <div class="card-flower">
+                        <a class="card-flower__image" href="#">
+                           <img src="img/flowers/serenade.avif" alt="">
+                        </a>
+                        <div class="card-flower__panel">
+                           <h3 class="card-flower__title"><a href="#">Springtime Serenade</a></h3>
+                           <div class="card-flower__actions">
+                              <a href="#">
+                                 <img src="img/flowers/heart.svg" alt="heart-icon">
+                              </a>
+                              <a href="#">
+                                 <img src="img/flowers/basket.svg" alt="basket-icon">
+                              </a>
+                           </div>
+                        </div>
+                        <span>65 Euro</span>
+                     </div>
+
+                     <div class="card-flower">
+                        <a class="card-flower__image" href="#">
+                           <img src="img/flowers/splendor.avif" alt="">
+                        </a>
+                        <div class="card-flower__panel">
+                           <h3 class="card-flower__title"><a href="#">Blooming Splendor</a></h3>
+                           <div class="card-flower__actions">
+                              <a href="#">
+                                 <img src="img/flowers/heart.svg" alt="heart-icon">
+                              </a>
+                              <a href="#">
+                                 <img src="img/flowers/basket.svg" alt="basket-icon">
+                              </a>
+                           </div>
+                        </div>
+                        <span>50 Euro</span>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </main>
+
+   </div>
+
+   <footer class="footer">
+      <div class="footer__container">
+         <p>&copy; 2025 Yurii Kostenko.</p>
+      </div>
+   </footer>
+
+
+
+</body>
+
+</html>
