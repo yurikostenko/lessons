@@ -12,6 +12,9 @@
    }
 }
 @media (max-width: 767.98px) {
+   .header__body {
+      padding: 12px 0;
+   }
    .icon-menu {
       display: block;
       width: 30px;
@@ -44,21 +47,21 @@
    }
    .menu-open .icon-menu::before {
       top: 50%;
-      transform: rotate(-45deg) translateY(-2px);
+      transform: rotate(-45deg) translateY(-1.5px);
    }
    .menu-open .icon-menu::after {
       bottom: 50%;
-      transform: rotate(45deg) translateY(2px);
+      transform: rotate(45deg) translateY(1.5px);
    }
    body.menu-open {
       overflow: hidden;
    }
    .menu {
       position: fixed;
-      top: 97px;
+      top: 68px;
       right: -100%;
       width: 100%;
-      height: calc(100vh - 97px);
+      height: calc(100vh - 68px);
       background: #eddcd1;
       padding: 70px 30px 30px;
       overflow-y: auto;
