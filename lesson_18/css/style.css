@@ -1,0 +1,77 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ===== Основні стилі ===== */
+
+body {
+   font-family: "Poppins", sans-serif;
+}
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.wrapper > main {
+   flex-grow: 1;
+}
+[class*="__container"] {
+   margin: 0 auto;
+   padding: 0 15px;
+   max-width: 1350px;
+}
+
+/* ===== header ====== */
+
+.header {
+   padding: 20px;
+   margin-bottom: 50px;
+   background: linear-gradient(90deg, rgba(96, 96, 96, 1) 0%, rgba(252, 252, 252, 1) 50%, rgba(180, 180, 180, 1) 100%);
+}
+.header__container {
+   display: flex;
+   align-items: center;
+}
+.header__logo {
+   width: 97px;
+   height: 97px;
+   overflow: hidden;
+   border-radius: 50%;
+}
+
+.header__logo img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: -30px 0;
+}
+
+.header__headline {
+   font-size: 45px;
+   font-weight: 700;
+   letter-spacing: 8px;
+   color: #913939;
+   text-shadow: 2px 2px 2px coral;
+   margin: 0 auto;
+}
+
+/* =====  ===== */
+
+.page__blog {
+   display: flex;
+   column-gap: 48px;
+}
+
+/* =====  ===== */
+
+/* ===== footer ===== */
+
+.footer {
+   padding: 40px 0;
+   text-align: center;
+   font-size: 24px;
+   background: linear-gradient(90deg, rgba(96, 96, 96, 1) 0%, rgba(252, 252, 252, 1) 50%, rgba(180, 180, 180, 1) 100%);
+}
+
+/*===============================================*/

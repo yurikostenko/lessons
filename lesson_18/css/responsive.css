@@ -1,0 +1,52 @@
+/* ===== header ====== */
+
+@media (max-width: 767.98px) {
+   .header {
+      padding: 15px;
+      margin-bottom: 30px;
+   }
+   .header__logo {
+      width: 50px;
+      height: 50px;
+   }
+   .header__logo img {
+      object-position: -15px 0;
+   }
+   .header__headline {
+      font-size: 35px;
+      letter-spacing: 0;
+   }
+}
+@media (max-width: 479.98px) {
+   .header {
+      padding: 10px;
+      margin-bottom: 20px;
+   }
+   .header__logo {
+      width: 40px;
+      height: 40px;
+   }
+   .header__logo img {
+      object-position: -12px 0;
+   }
+   .header__headline {
+      font-size: 25px;
+   }
+}
+
+/* =====  ====== */
+
+/* ===== footer ===== */
+
+@media (max-width: 767.98px) {
+   .footer {
+      padding: 20px 0;
+      font-size: 20px;
+   }
+}
+@media (max-width: 479.98px) {
+   .footer {
+      padding: 15px 0;
+      font-size: 18px;
+   }
+}
