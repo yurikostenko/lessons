@@ -476,17 +476,6 @@ body {
       visibility: hidden;
    }
 }
-@media (any-hover: none) {
-   .icon__item--default,
-   .showcase__meta {
-      opacity: 0;
-      visibility: hidden;
-   }
-   .icon__item--hover-card {
-      opacity: 1;
-      visibility: visible;
-   }
-}
 
 /* ===== showcase ===== */
 
@@ -611,6 +600,39 @@ body {
    transition:
       opacity 0.3s,
       visibility 0.5s;
+}
+
+@media (any-hover: none) {
+   .icon__item--default {
+      opacity: 0;
+      visibility: hidden;
+   }
+   .icon__item--hover-card {
+      opacity: 1;
+      visibility: visible;
+   }
+   .showcase__content {
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      flex-grow: 0;
+   }
+   .showcase__block-icons {
+      position: static;
+   }
+   .showcase__meta {
+      margin-bottom: 10px;
+   }
+   .showcase__image {
+      align-self: center;
+   }
+   .showcase__item {
+      justify-content: space-around;
+   }
+   .sale-showcase {
+      height: 100%;
+   }
 }
 
 /* ===== flowers ===== */
