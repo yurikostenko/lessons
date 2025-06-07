@@ -62,11 +62,6 @@
       background-color: #f6f4f2;
    }
 }
-@media (max-width: 1082px) {
-   .products__cards {
-      grid-template-columns: repeat(2, 1fr);
-   }
-}
 @media (max-width: 767.98px) {
    .page__products {
       margin-bottom: 40px;
@@ -78,25 +73,9 @@
       font-size: 30px;
    }
 }
-@media (max-width: 629.98px) {
-   .product-sale {
-      grid-column: auto;
-      aspect-ratio: 248 / 335;
-      min-height: unset;
-   }
-   .sale-showcase {
-      grid-column: auto;
-      aspect-ratio: 312 / 423;
-      min-height: unset;
-   }
-   .product-sale,
-   .sale-showcase {
-      max-width: 400px;
-      width: 100%;
-      margin: 0 auto;
-   }
+@media (max-width: 545px) {
    .products__cards {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
    }
 }
 @media (max-width: 479.98px) {
@@ -113,9 +92,21 @@
       font-size: 24px;
    }
 }
-@media (max-width: 344.98px) {
+@media (max-width: 360px) {
+   .products__cards {
+      grid-template-columns: 1fr;
+   }
    .showcase {
-      grid-template-columns: repeat(auto-fill, 290px);
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+   }
+   .product-sale {
+      grid-column: auto;
+      aspect-ratio: 248 / 335;
+   }
+   .sale-showcase {
+      grid-column: auto;
+      aspect-ratio: 312 / 423;
    }
    .block-icons--row {
       gap: 5px;
@@ -127,7 +118,13 @@
 
 /* ===== flower ===== */
 
-@media (max-width: 1229.98px) {
+@media (max-width: 1148px) {
+   .flowers__title {
+      font-size: 45px;
+      padding: 40px 30px;
+   }
+}
+@media (max-width: 991.98px) {
    .flowers__catalog-grid {
       display: flex;
       flex-direction: column;
@@ -145,7 +142,7 @@
       row-gap: 29px;
    }
    .flowers__title {
-      font-size: 50px;
+      font-size: 35px;
       padding: 0;
       text-align: center;
    }
@@ -154,22 +151,24 @@
    .page__flowers {
       padding: 25px 0;
    }
-   .flowers__grid-main {
-      grid-template-columns: 1fr;
-   }
    .flowers__catalog-grid,
    .flowers__grid-main {
       row-gap: 25px;
    }
    .flowers__column-big-wrap {
-      grid-template-columns: 1fr;
-      row-gap: 25px;
+      column-gap: 29px;
    }
    .flowers__column-grid {
       gap: 30px;
    }
-   .flowers__title {
-      font-size: 36px;
+}
+@media (max-width: 600px) {
+   .flowers__column-big-wrap {
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+   .flowers__grid-main {
+      grid-template-columns: 1fr;
    }
    .flowers__button {
       justify-content: center;
