@@ -1,0 +1,350 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ===== Основні стилі ===== */
+
+body {
+   font-family: "Poppins", sans-serif;
+}
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.wrapper > main {
+   flex-grow: 1;
+}
+[class*="__container"] {
+   margin: 0 auto;
+   padding: 0 0.9375rem;
+   max-width: 64.375rem;
+}
+
+/* ===== header ====== */
+
+.header {
+   padding: 1.25rem;
+   margin-bottom: 3.125rem;
+   background: linear-gradient(90deg, rgba(96, 96, 96, 1) 0%, rgba(252, 252, 252, 1) 50%, rgba(180, 180, 180, 1) 100%);
+}
+.header__container {
+   display: flex;
+   align-items: center;
+}
+.header__logo {
+   width: 6.0625rem;
+   height: 6.0625rem;
+   overflow: hidden;
+   border-radius: 50%;
+}
+
+.header__logo img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: -1.875rem 0;
+}
+
+.header__headline {
+   font-size: 2.8125rem;
+   font-weight: 700;
+   letter-spacing: 0.5rem;
+   color: #913939;
+   text-shadow: 0.125rem 0.125rem 0.125rem coral;
+   margin: 0 auto;
+}
+
+/* ------------------- */
+
+[class*="page__"] {
+   margin-bottom: 5rem;
+}
+.title {
+   text-align: center;
+   font-size: 1.375rem;
+   margin-bottom: 1.5625rem;
+}
+:root {
+   --colorMain: lightseagreen;
+   --colorMain2: rgb(225, 225, 225);
+}
+
+/* ===== father-width ===== */
+
+.page__viewport {
+   display: flex;
+   flex-direction: column;
+   row-gap: 0.625rem;
+}
+.f-width__column {
+   background-color: var(--colorMain2);
+   display: flex;
+   flex-direction: column;
+   row-gap: 0.625rem;
+}
+[class*="block"] {
+   background-color: var(--colorMain);
+   color: #fff;
+   line-height: 1.5;
+}
+.f-width__block-01 {
+   /* width: 30%; */
+   inline-size: 30%;
+}
+.f-width__block-02 {
+   /* max-width: 50%; */
+   max-inline-size: 50%;
+}
+.f-width__block-03 {
+   /* min-width: 105%; */
+   min-inline-size: 105%;
+}
+.f-width__block-04 {
+   padding: 5%;
+}
+.f-width__block-05 {
+   padding: 0 33%;
+   /* padding-inline: 33%; */
+}
+.f-width__block-06 {
+   padding: 2% 0;
+   /* padding-block: 2%; */
+}
+.f-width__block-07 {
+   margin: 5%;
+}
+.f-width__block-08 {
+   /* margin: 0 20%; */
+   margin-inline: 20%;
+}
+.f-width__block-09 {
+   /* margin: 5% 0; */
+   margin-block: 5%;
+}
+.f-width__block-10 {
+   position: relative;
+   /* right: 5%; */
+   inset-inline: -5%;
+}
+
+/* ===== father-height ===== */
+
+.f-height__row {
+   background-color: var(--colorMain2);
+   display: flex;
+   column-gap: 50px;
+   height: 12.5rem; /* 200px */
+}
+[class*="f-height__block"] {
+   flex-basis: 25%;
+}
+.f-height__block-01 {
+   height: 50%;
+}
+.f-height__block-02 {
+   /* max-height: 80%; */
+   max-block-size: 80%;
+}
+.f-height__block-03 {
+   /* min-height: 105%; */
+   min-block-size: 105%;
+}
+.f-height__block-04 {
+   position: relative;
+   inset-block: -5%;
+}
+
+/* ===== father-viewport ===== */
+
+.page__father-viewport {
+   margin-bottom: 0;
+}
+.f-viewport {
+   position: fixed;
+   left: 2%;
+   top: 20%;
+   border: 1px solid #bebebe;
+   padding: 0.625rem;
+   display: flex;
+   flex-direction: column;
+   row-gap: 0.625rem;
+}
+.f-viewport__title {
+   margin-bottom: 0;
+}
+
+/* ===== father-positioned ===== */
+
+.f-positioned {
+   display: flex;
+   flex-direction: column;
+   row-gap: 0.625rem;
+}
+.f-positioned__relative {
+   position: relative;
+   background-color: var(--colorMain2);
+   text-align: center;
+}
+.f-positioned__title {
+   margin-bottom: 0;
+}
+.f-positioned__block {
+   position: absolute;
+   left: 10%;
+   top: 50%;
+}
+
+/* ===== father-font ===== */
+
+.f-font__block {
+   font-size: 150%;
+   line-height: 150%;
+}
+
+/* =====father-transform  ===== */
+
+.f-transform__size {
+   width: 9.375rem;
+   height: 9.375rem;
+   background-color: var(--colorMain2);
+}
+.f-transform__link {
+   pointer-events: none;
+}
+.f-transform__block {
+   width: 9.375rem;
+   height: 9.375rem;
+   transform: translate(20%, 30%);
+}
+
+/* ===== test ===== */
+
+.test-rem,
+.test-em {
+   display: flex;
+   flex-direction: column;
+   row-gap: 0.625rem;
+}
+.test-rem__title,
+.test-em__title {
+   margin-bottom: 0;
+}
+.test-rem__block {
+   width: 15.625rem; /* (250px) */
+}
+.test-em__block-01 {
+   font-size: 1.25rem; /* (20px) */
+   inline-size: 25em; /* (500px) */
+   block-size: 4em; /* (80px) */
+}
+.test-em__block-02 {
+   font-size: 1.25rem;
+   line-height: 1.5;
+   padding: 0.75em;
+}
+.test-em__block-03 {
+   font-size: 1.25rem;
+}
+@media (max-width: 50em) {
+   .test-em__block-03 {
+      font-size: 1rem;
+   }
+}
+
+/* ===== viewport ===== */
+
+.page__viewport {
+   text-align: center;
+}
+.viewport__block-svh {
+   height: 100svh;
+   padding-top: 50svh;
+}
+.viewport__block-svw {
+   width: 10svw;
+}
+.viewport__block-vw {
+   width: 20vw;
+   padding: 2vw 0;
+}
+.viewport__block-vh {
+   height: 20vh;
+   padding-top: 10vh;
+}
+.viewport__block-vmax {
+   height: 10vmax;
+   padding-top: 5vmax;
+}
+.viewport__block-vmin {
+   height: 10vmin;
+   padding-top: 5vmin;
+}
+.viewport__block-calc {
+   width: calc(30vw - 1.25rem);
+}
+.viewport__block-clamp {
+   font-size: clamp(1.125rem, 0.625rem + 2.5vw, 2.188rem);
+}
+.viewport__block-min {
+   width: min(40vw, 100%);
+}
+
+/* ===== cursor ===== */
+
+.cursor__box {
+   display: flex;
+   column-gap: 1.25rem;
+   justify-content: space-between;
+}
+[class*="cursor__block"] {
+   width: 11.25rem;
+   height: 5rem;
+   text-align: center;
+   align-content: center;
+}
+.cursor__block-help {
+   cursor: help;
+}
+.cursor__block-wait {
+   cursor: wait;
+}
+.cursor__block-crosshair {
+   cursor: crosshair;
+}
+.cursor__block-not-allowed {
+   cursor: not-allowed;
+}
+.cursor__block-zoom-in {
+   cursor: zoom-in;
+}
+
+/* ===== vertical-text ===== */
+
+.vertical__block-text {
+   writing-mode: vertical-lr;
+   text-orientation: upright;
+   padding-block: 0.625rem;
+   padding-inline: 0.625rem;
+   border-inline-start: 0.3125rem solid #913939;
+   border-block-end: 0.3125rem solid #913939;
+}
+
+/* ===== clip-path ===== */
+
+.clip-path__image {
+   aspect-ratio: 374 / 378;
+   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+/* ===== footer ===== */
+
+.footer {
+   padding: 2.5rem 0;
+   text-align: center;
+   font-size: 1.5rem;
+   background: linear-gradient(90deg, rgba(96, 96, 96, 1) 0%, rgba(252, 252, 252, 1) 50%, rgba(180, 180, 180, 1) 100%);
+}
+
+/*===============================================*/

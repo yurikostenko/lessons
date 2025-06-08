@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+   <title>Lesson 19 (Відносні одиниці та інше)</title>
+</head>
+
+<body>
+
+   <div class="wrapper">
+
+      <header class="header">
+         <div class="header__container">
+            <div class="header__logo">
+               <img src="img/popeye.jpg" alt="Portrait of a summer wise sailor in a hat">
+            </div>
+            <h1 class="header__headline">Lesson_19</h1>
+         </div>
+      </header>
+
+      <main class="page">
+         <div class="page__container">
+
+            <article class="page__father-width f-width">
+               <h2 class="f-width__title title">Від ширини батьківського елементу (1000px)</h2>
+               <div class="f-width__column">
+                  <div class="f-width__block-01">width: 30%; , inline-size: 30%;</div>
+                  <div class="f-width__block-02">max-width: 50%; , max-inline-size: 50%;</div>
+                  <div class="f-width__block-03">min-width: 105%; , min-inline-size: 105%;</div>
+                  <div class="f-width__block-04">padding: 5%;</div>
+                  <div class="f-width__block-05">padding: 0 33%; , padding-inline: 33%;</div>
+                  <div class="f-width__block-06"> padding: 2% 0; , padding-block: 2%;</div>
+                  <div class="f-width__block-07">margin: 5%;</div>
+                  <div class="f-width__block-08">margin: 0 20%; , margin-inline: 20%;</div>
+                  <div class="f-width__block-09">margin: 5% 0; , margin-block: 5%;</div>
+                  <div class="f-width__block-10">position: relative; inset-inline: -5%; (left: , right:)</div>
+               </div>
+            </article>
+
+            <article class="page__father-height f-height">
+               <h2 class="f-height__title title">Від висоти батьківського елементу (200px - має мати вказану)</h2>
+               <div class="f-height__row">
+                  <div class="f-height__block-01">height: 50%;</div>
+                  <div class="f-height__block-02">max-height: 80%; , max-block-size: 20%;</div>
+                  <div class="f-height__block-03">min-height: 105%; , min-block-size: 105%;</div>
+                  <div class="f-height__block-04">position: relative; inset-block: -5%; (bottom: , top:)</div>
+               </div>
+            </article>
+
+            <article class="page__father-viewport f-viewport">
+               <h2 class="f-viewport__title title">Від в'юпорта (вікно браузера)</h2>
+               <p>(Від ширини: left: , right: , inset-inline:)</p>
+               <p>(Від висоти: top: , bottom: , inset-block:)</p>
+               <div class="f-viewport__block">position: fixed; left: 2%; top: 20%;</div>
+            </article>
+
+            <article class="page__father-positioned f-positioned">
+               <h2 class="f-positioned__title title">Від батьківського елементу, у якого position відмінний від
+                  static
+               </h2>
+               <p>(Від ширини: left: , right: , inset-inline:)</p>
+               <p>(Від висоти: top: , bottom: , inset-block:)</p>
+               <div class="f-positioned__relative">position: relative;
+                  <div class="f-positioned__block">position: absolute; left: 10%; top: 50%;</div>
+               </div>
+            </article>
+
+            <article class="page__father-font f-font">
+               <h2 class="f-font__title title">Від розміру шрифту за замовченням, поточного або успадкованого</h2>
+               <div class="f-font__block">font-size: 150%; line-height: 150%;
+               </div>
+            </article>
+
+            <article class="page__father-transform f-transform">
+               <h2 class="f-transform__title title">Від розмірів самого елементу</h2>
+               <div class="f-transform__size">
+                  <a class="f-transform__link" href="#">
+                     <div class="f-transform__block">transform: translate(20%, 30%);
+                     </div>
+                  </a>
+               </div>
+            </article>
+
+            <article class="page__test test-rem">
+               <h2 class="test-rem__title title">REM</h2>
+               <p>Відносно розміру шрифту за замовченням 1rem = 16px</p>
+               <div class="test-rem__block">width: 15.625rem; (250px)
+               </div>
+            </article>
+
+            <article class="page__test test-em">
+               <h2 class="test-em__title title">EM</h2>
+               <p>Відносно поточного, шрифту за замовченням або успаткованого розміру шрифту</p>
+               <div class="test-em__block-01"> font-size: 1.25rem; (20px) inline-size: 25em; (500px) block-size: 4em;
+                  (80px)
+               </div>
+               <p>1. Коли треба прив'язатись до поточного або успаткованого розміру шрифту</p>
+               <div class="test-em__block-02">font-size: 1.25rem; line-height: 1.5; padding: 0.75em;</div>
+               <p>2. Використовуємо EM у @media</p>
+               <div class="test-em__block-03">@media (max-width: 50em) { /* 800/16 */ .test-em__block-03 { font-size:
+                  1rem; }}</div>
+            </article>
+
+            <article class="page__viewport viewport">
+               <h2 class="viewport__title title">Одиниці в'юпорту, calc, clamp, minmax</h2>
+               <div class="viewport__block-svh">height: 100svh; , padding-top: 50svh;</div>
+               <div class="viewport__block-svw">width: 10svw;</div>
+               <div class="viewport__block-vw">width: 20vw; , padding: 2vw 0;</div>
+               <div class="viewport__block-vh">height: 20vh;</div>
+               <div class="viewport__block-vmax">height: 10vmax; , padding-top: 5vmax;</div>
+               <div class="viewport__block-vmin">height: 10vmin; padding-top: 5vmin;</div>
+               <div class="viewport__block-calc">width: calc(30vw - 1.25rem);</div>
+               <div class="viewport__block-clamp">font-size: clamp(1.125rem, 0.625rem + 2.5vw, 2.188rem);</div>
+               <div class="viewport__block-min">width: min(40vw, 100%);</div>
+            </article>
+
+            <article class="page__cursor cursor">
+               <h2 class="cursor__title title">CURSOR</h2>
+               <div class="cursor__box">
+                  <div class="cursor__block-help">cursor: help;</div>
+                  <div class="cursor__block-wait">cursor: wait;</div>
+                  <div class="cursor__block-crosshair">cursor: crosshair;</div>
+                  <div class="cursor__block-not-allowed">cursor: not-allowed;</div>
+                  <div class="cursor__block-zoom-in">cursor: zoom-in;</div>
+               </div>
+            </article>
+
+            <article class="page__vertical vertical">
+               <h2 class="vertical__title title">Вертикальний текст. Логічні властивості</h2>
+               <div class="vertical__block-text">writing-mode: vertical-lr;</div>
+            </article>
+
+            <article class="page__clip-path clip-path">
+               <h2 class="clip-path__title title">Обрізати елементи (clip-path)</h2>
+               <img class="clip-path__image" src="img/image.avif"
+                  alt="A decorative vase filled with a variety of colorful flowers, set against a neutral background.">
+            </article>
+
+         </div>
+
+      </main>
+
+   </div>
+
+   <footer class="footer">
+      <div class="footer__container">
+         <p>&copy; 2025 Yurii Kostenko.</p>
+      </div>
+   </footer>
+
+
+
+</body>
+
+</html>
