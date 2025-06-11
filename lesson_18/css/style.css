@@ -58,13 +58,28 @@ body {
 
 /* =====  ===== */
 
-.page__blog {
+.comments__item {
+   margin: 30px 0;
    display: flex;
-   column-gap: 48px;
+   gap: 12px;
 }
-
-/* =====  ===== */
-
+.comments__figure {
+   width: 40px;
+   height: 40px;
+   flex-shrink: 0;
+}
+.comments__avatar {
+   aspect-ratio: 1 /1;
+}
+.comments__body {
+}
+.comments__meta {
+   display: flex;
+}
+.comments__name {
+}
+.comments__date {
+}
 /* ===== footer ===== */
 
 .footer {

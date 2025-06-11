@@ -33,9 +33,14 @@
                         <img src="#" alt="image">
                      </div>
                      <div class="blog__post-meta post-meta">
-                        <a href="#"><span class="post-meta__category">Food</span></a>
-                        <a href="#"><span class="post-meta__author">By Admin</span></a>
-                        <a href="#"><span class="post-meta__comments">65 Comments</span></a>
+                        <ul class="post-meta__list">
+                           <li class="post-meta__link"><a href="#"><span class="post-meta__category">Food</span></a>
+                           </li>
+                           <li class="post-meta__link"><a href="#"><span class="post-meta__author">By Admin</span></a>
+                           </li>
+                           <li class="post-meta__link"><a href="#"><span class="post-meta__comments">65
+                                    Comments</span></a></li>
+                        </ul>
                      </div>
                      <h2 class="blog__title">Maecenas tempor urna sed quam mollis, a placerat dui fringill Suspendisse.
                      </h2>
@@ -50,20 +55,23 @@
                               </div>
                            </figcaption>
                         </figure>
-                        <address>
-                           <ul class="author__social">
-                              <li class="author__link"><a href="#"><img src="img/facebook.svg" alt="Facebook"></a>
-                              </li>
-                              <li class="author__link"><a href="#"><img src="img/twitter.svg" alt="Twitter"></a>
-                              </li>
-                              <li class="author__link"><a href="#"><img src="img/pinterest.svg" alt="Pinterest"></a>
-                              </li>
-                              <li class="author__link"><a href="#"><img src="img/instagram.svg" alt="Instagram"></a>
-                              </li>
-                              <li class="author__link"><a href="#"><img src="img/copy-link.svg" alt="Copy link"></a>
-                              </li>
-                           </ul>
-                        </address>
+                        <ul class="author__social">
+                           <li class="author__link"><a href="#" target="_blank" rel="noopener noreferrer"><img
+                                    src="img/facebook.svg" alt="Facebook"></a>
+                           </li>
+                           <li class="author__link"><a href="#" target="_blank" rel="noopener noreferrer"><img
+                                    src="img/twitter.svg" alt="Twitter"></a>
+                           </li>
+                           <li class="author__link"><a href="#" target="_blank" rel="noopener noreferrer"><img
+                                    src="img/pinterest.svg" alt="Pinterest"></a>
+                           </li>
+                           <li class="author__link"><a href="#" target="_blank" rel="noopener noreferrer"><img
+                                    src="img/instagram.svg" alt="Instagram"></a>
+                           </li>
+                           <li class="author__link"><a href="#" aria-label="copy link"><img src="img/copy-link.svg"
+                                    alt="Copy link"></a>
+                           </li>
+                        </ul>
                      </div>
                   </header>
 
@@ -140,7 +148,7 @@
                               comment.</span>
                         </label>
 
-                        <button class="form__button button">Post Comments</button>
+                        <button class="form__button button" type="submit">Post Comments</button>
 
                      </form>
                   </section>
@@ -148,78 +156,102 @@
                   <section class="blog__comments comments">
                      <h2 class="comments__title title">Comments</h2>
 
-                     <article class="comments__item">
-                        <figure class="comments__figure">
-                           <img class="comments__avatar" src="#" alt="Annette Black">
-                           <figcaption class="comments__info">
-                              <div class="comments__meta">
-                                 <h3 class="comments__name">Annette Black</h3>
-                                 <time class="comments__date" datetime="2021-04-26">26 Apr, 2021</time>
-                              </div>
-                              <p>In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu
-                                 aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam.
-                              </p>
-                           </figcaption>
-                        </figure>
-                     </article>
+                     <ul class="comments__items">
 
-                     <article class="comments__item">
-                        <figure class="comments__figure">
-                           <img class="comments__avatar" src="#" alt="Devon Lane">
-                           <figcaption class="comments__info">
-                              <div class="comments__meta">
-                                 <h3 class="comments__name">Devon Lane</h3>
-                                 <time class="comments__date" datetime="2021-04-24">24 Apr, 2021</time>
+                        <li>
+                           <article class="comments__item">
+                              <figure class="comments__figure">
+                                 <img class="comments__avatar" src="#" alt="Annette Black">
+                              </figure>
+                              <div class="comments__body">
+                                 <div class="comments__meta">
+                                    <h3 class="comments__name">Annette Black</h3>
+                                    <time class="comments__date" datetime="2021-04-26">26 Apr, 2021</time>
+                                 </div>
+                                 <p>
+                                    In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat,
+                                    metus eu
+                                    aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non
+                                    diam.
+                                 </p>
                               </div>
-                              <p>Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat
-                                 quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum
-                                 nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est
-                                 sem tempor eros.</p>
-                           </figcaption>
-                        </figure>
-                     </article>
+                           </article>
+                        </li>
 
-                     <article class="comments__item">
-                        <figure class="comments__figure">
-                           <img class="comments__avatar" src="#" alt="Jacob Jones">
-                           <figcaption class="comments__info">
-                              <div class="comments__meta">
-                                 <h3 class="comments__name">Jacob Jones</h3>
-                                 <time class="comments__date" datetime="2021-04-20">20 Apr, 2021</time>
+                        <li>
+                           <article class="comments__item">
+                              <figure class="comments__figure">
+                                 <img class="comments__avatar" src="#" alt="Devon Lane">
+                              </figure>
+                              <div class="comments__body">
+                                 <div class="comments__meta">
+                                    <h3 class="comments__name">Devon Lane</h3>
+                                    <time class="comments__date" datetime="2021-04-24">24 Apr, 2021</time>
+                                 </div>
+                                 <p>Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet
+                                    erat
+                                    quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor
+                                    rutrum
+                                    nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam
+                                    venenatis, est
+                                    sem tempor eros.
+                                 </p>
                               </div>
-                              <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-                              </p>
-                           </figcaption>
-                        </figure>
-                     </article>
+                           </article>
+                        </li>
 
-                     <article class="comments__item">
-                        <figure class="comments__figure">
-                           <img class="comments__avatar" src="#" alt="Jane Cooper">
-                           <figcaption class="comments__info">
-                              <div class="comments__meta">
-                                 <h3 class="comments__name">Jane Cooper</h3>
-                                 <time class="comments__date" datetime="2021-04-18">18 Apr, 2021</time>
+                        <li>
+                           <article class="comments__item">
+                              <figure class="comments__figure">
+                                 <img class="comments__avatar" src="#" alt="Jacob Jones">
+                              </figure>
+                              <div class="comments__body">
+                                 <div class="comments__meta">
+                                    <h3 class="comments__name">Jacob Jones</h3>
+                                    <time class="comments__date" datetime="2021-04-20">20 Apr, 2021</time>
+                                 </div>
+                                 <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                    curae.
+                                 </p>
                               </div>
-                              <p>Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat
-                                 arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex.
-                              </p>
-                           </figcaption>
-                        </figure>
-                     </article>
+                           </article>
+                        </li>
 
-                     <article class="comments__item">
-                        <figure class="comments__figure">
-                           <img class="comments__avatar" src="#" alt="Darrell Steward">
-                           <figcaption class="comments__info">
-                              <div class="comments__meta">
-                                 <h3 class="comments__name">Darrell Steward</h3>
-                                 <time class="comments__date" datetime="2021-04-07">7 Apr, 2021</time>
+                        <li>
+                           <article class="comments__item">
+                              <figure class="comments__figure">
+                                 <img class="comments__avatar" src="#" alt="Jane Cooper">
+                              </figure>
+                              <div class="comments__body">
+                                 <div class="comments__meta">
+                                    <h3 class="comments__name">Jane Cooper</h3>
+                                    <time class="comments__date" datetime="2021-04-18">18 Apr, 2021</time>
+                                 </div>
+                                 <p>Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a
+                                    volutpat
+                                    arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat
+                                    imperdiet ex.
+                                 </p>
                               </div>
-                              <p>Nulla molestie interdum ultricies. </p>
-                           </figcaption>
-                        </figure>
-                     </article>
+                           </article>
+                        </li>
+
+                        <li>
+                           <article class="comments__item">
+                              <figure class="comments__figure">
+                                 <img class="comments__avatar" src="#" alt="Darrell Steward">
+                              </figure>
+                              <div class="comments__body">
+                                 <div class="comments__meta">
+                                    <h3 class="comments__name">Darrell Steward</h3>
+                                    <time class="comments__date" datetime="2021-04-07">7 Apr, 2021</time>
+                                 </div>
+                                 <p>Nulla molestie interdum ultricies. </p>
+                              </div>
+                           </article>
+                        </li>
+
+                     </ul>
 
                   </section>
 
@@ -304,42 +336,55 @@
                   <section class="sidebar__recent recent">
                      <h2 class="recent__subtitle subtitle">Recently Added</h2>
 
-                     <article class="recent__item">
-                        <figure class="recent__figure">
-                           <a class="recent__image" href="#">
-                              <img src="#" alt="image">
-                           </a>
-                           <figcaption class="recent__info">
-                              <h3 class="recent__name"><a href="#">Curabitur porttitor orci eget nequ accumsan.</a></h3>
-                              <time class="recent__date" datetime="2021-04-25">Apr 25, 2021</time>
-                           </figcaption>
-                        </figure>
-                     </article>
+                     <ul class="recent__items">
 
-                     <article class="recent__item">
-                        <figure class="recent__figure">
-                           <a class="recent__image" href="#">
-                              <img src="#" alt="image">
-                           </a>
-                           <figcaption class="recent__info">
-                              <h3 class="recent__name"><a href="#">Donec mattis arcu faucibus suscipit viverra.</a></h3>
-                              <time class="recent__date" datetime="2021-04-25">Apr 25, 2021</time>
-                           </figcaption>
-                        </figure>
-                     </article>
+                        <li>
+                           <article class="recent__item">
+                              <figure class="recent__figure">
+                                 <a class="recent__image" href="#">
+                                    <img src="#" alt="image">
+                                 </a>
+                                 <figcaption class="recent__info">
+                                    <h3 class="recent__name"><a href="#">Curabitur porttitor orci eget nequ
+                                          accumsan.</a></h3>
+                                    <time class="recent__date" datetime="2021-04-25">Apr 25, 2021</time>
+                                 </figcaption>
+                              </figure>
+                           </article>
+                        </li>
 
-                     <article class="recent__item">
-                        <figure class="recent__figure">
-                           <a class="recent__image" href="#">
-                              <img src="#" alt="image">
-                           </a>
-                           <figcaption class="recent__info">
-                              <h3 class="recent__name"><a href="#">Quisque posuere tempus rutrum. Integer velit ex.</a>
-                              </h3>
-                              <time class="recent__date" datetime="2021-04-25">Apr 25, 2021</time>
-                           </figcaption>
-                        </figure>
-                     </article>
+                        <li>
+                           <article class="recent__item">
+                              <figure class="recent__figure">
+                                 <a class="recent__image" href="#">
+                                    <img src="#" alt="image">
+                                 </a>
+                                 <figcaption class="recent__info">
+                                    <h3 class="recent__name"><a href="#">Donec mattis arcu faucibus suscipit
+                                          viverra.</a></h3>
+                                    <time class="recent__date" datetime="2021-04-25">Apr 25, 2021</time>
+                                 </figcaption>
+                              </figure>
+                           </article>
+                        </li>
+
+                        <li>
+                           <article class="recent__item">
+                              <figure class="recent__figure">
+                                 <a class="recent__image" href="#">
+                                    <img src="#" alt="image">
+                                 </a>
+                                 <figcaption class="recent__info">
+                                    <h3 class="recent__name"><a href="#">Quisque posuere tempus rutrum. Integer velit
+                                          ex.</a>
+                                    </h3>
+                                    <time class="recent__date" datetime="2021-04-25">Apr 25, 2021</time>
+                                 </figcaption>
+                              </figure>
+                           </article>
+                        </li>
+
+                     </ul>
 
                   </section>
 
