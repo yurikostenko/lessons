@@ -1,0 +1,200 @@
+@use "sass:math";
+@use "_reset";
+@use "_mixins.scss" as *;
+@use "_responsive";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ===== Основні стилі ===== */
+
+body {
+   font-family: "Poppins", sans-serif;
+}
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.wrapper > main {
+   flex-grow: 1;
+}
+[class*="__container"] {
+   margin: 0 auto;
+   padding: 0 toRem(15);
+   max-width: toRem(1000);
+}
+
+/* ===== header ====== */
+.header {
+   padding: 1.25rem;
+   margin-bottom: 3.125rem;
+   background: linear-gradient(90deg, rgba(96, 96, 96, 1) 0%, rgba(252, 252, 252, 1) 50%, rgba(180, 180, 180, 1) 100%);
+   &__container {
+      display: flex;
+      align-items: center;
+   }
+
+   &__logo {
+      width: 6.0625rem;
+      height: 6.0625rem;
+      overflow: hidden;
+      border-radius: 50%;
+   }
+
+   &__logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: -1.875rem 0;
+   }
+
+   &__headline {
+      font-size: 2.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.5rem;
+      color: #913939;
+      text-shadow: 0.125rem 0.125rem 0.125rem coral;
+      margin: 0 auto;
+   }
+}
+
+/* ------------------- */
+
+.page__wrapper > * {
+   margin-bottom: 30px;
+}
+
+/* --------- змінна ---------- */
+
+$mainColor: green;
+
+.block-green {
+   color: $mainColor;
+}
+
+/* --------- шаблон ---------- */
+
+.button {
+   padding: 10px 20px;
+   font-size: 20px;
+   background-color: $mainColor;
+   @media (any-hover: hover), (pointer: fine) {
+      &:hover {
+         background-color: #0b6222;
+      }
+   }
+}
+.button-blue {
+   @extend .button;
+   $main2Color: blue;
+   background-color: $main2Color;
+   @media (any-hover: hover), (pointer: fine) {
+      &:hover {
+         background-color: #2832b9;
+      }
+   }
+}
+
+// %button {
+// 	padding: 5px 20px;
+// 	font-size: 20px;
+// 	background-color: green;
+// }   Не з'явиться, допоки не використаєш
+
+// .page__button {
+// 	@extend %button;
+// 	border: 1px solid #000;
+// 	background-color: #fff;
+// }
+
+/* --------- міксін ---------- */
+
+@mixin box($width: 100px, $height: 200px, $bgColor: green, $borderColor: red) {
+   width: $width;
+   height: $height;
+   background-color: $bgColor;
+   border: 1px solid $borderColor;
+}
+
+.block {
+   display: flex;
+   gap: 30px;
+}
+
+.block-mixin {
+   @include box;
+}
+
+.block-mixin-mod {
+   @include box(80px, 150px, orange, grey);
+}
+
+/* --------- Застосування адаптивної властивості ---------- */
+
+.adaptive-text {
+   @include adaptiveValue("font-size", 55, 20, 0, 800, 400);
+   //@include adaptiveValue("font-size", 55, 20);
+   @include adaptiveValue("padding-top", 50, 10, 0, 800, 400);
+   //@include adaptiveValue("padding-top", 50, 10);
+}
+
+/* --------- Функція ---------- */
+
+@function percent($num1, $num2) {
+   $rez: math.div($num1, $num2) * 100%;
+   @return $rez;
+}
+
+.block-1 {
+   border: 1px solid black;
+   width: percent(300, 1200); // відбувається обчислення (300/1200)*100=25%
+}
+
+/* --------- оператори (математичні) ---------- */
+
+.block-2 {
+   line-height: math.div(45, 20); // math.div в препроцесорі означає ділення 45/20
+   width: 10 * 20 + px;
+}
+
+/* --------- цикл ---------- */
+
+.items {
+   color: #913939;
+
+   &__item {
+      font-size: 20px;
+      visibility: hidden;
+      transform: translate(-100%, 0);
+      opacity: 0;
+      animation: show-items 1s ease forwards;
+      &:not(:last-child) {
+         margin-bottom: 20px;
+      }
+      @for $i from 1 through 6 {
+         &:nth-child(#{$i}) {
+            $delay: ($i - 1) * 0.2;
+            animation-delay: #{$delay}s;
+         }
+      }
+   }
+}
+
+@keyframes show-items {
+   0% {
+   }
+   100% {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0px, 0%);
+   }
+}
+
+/* ===== footer ===== */
+.footer {
+   padding: 2.5rem 0;
+   text-align: center;
+   font-size: 1.5rem;
+   background: linear-gradient(90deg, rgba(96, 96, 96, 1) 0%, rgba(252, 252, 252, 1) 50%, rgba(180, 180, 180, 1) 100%);
+}
