@@ -75,18 +75,25 @@ if (2 * 20 <= 10 || 30 / 2 < 5 && 10 <= "10" || 20 === "20") {
 // Функція не має повертати NaN, Infinite або помилку 
 
 function safeDivide(a, b) {
-   return (typeof a === 'number' && typeof b === 'number' && b !== 0)
-      ? 'Результат ділення: ' + (a / b)
-      : 'Результат ділення: недійсні дані';
+   const result = a / b;
 
+   if (!Number.isFinite(result)) {
+      return 'Результат ділення: недійсні дані';
+   }
+
+   return 'Результат ділення: ' + result;
 }
 
+
 // Приклади викликів:
-console.log(safeDivide(10, 2));     // Результат ділення: 5
-console.log(safeDivide(5, 0));      // Результат ділення: недійсні дані
-console.log(safeDivide());          // Результат ділення: недійсні дані
-console.log(safeDivide(9));         // Результат ділення: недійсні дані
-console.log(safeDivide("6", 2));    // Результат ділення: недійсні дані
+console.log(safeDivide(10, 2));         // Результат ділення: 5
+console.log(safeDivide(5, 0));          // Результат ділення: недійсні дані
+console.log(safeDivide());              // Результат ділення: недійсні дані
+console.log(safeDivide(9));             // Результат ділення: недійсні дані
+console.log(safeDivide("6", 2));        // Результат ділення: 3
+console.log(safeDivide(NaN, 2));        // Результат ділення: недійсні дані
+console.log(safeDivide(Infinity, 2));   // Результат ділення: недійсні дані
+console.log(safeDivide(0, Infinity));   // Результат ділення: 0
 
 /*--------------------------------*/
 
