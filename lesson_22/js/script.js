@@ -109,3 +109,31 @@ someArray.forEach((item) => {
    }
 })
 
+/* ================================================= */
+
+// Завдання
+// Текст з ефектом друку
+
+const text = "Привіт! Ще текст!"
+function initText(text) {
+   let template = ``
+   for (let i = 0; i < text.length; ++i) {
+      const item = text[i]
+      template +=
+         `<span style="${item === ' ' ? `display:inline;` : ""}animation-delay: ${i * 0.1}s">${item}</span>`
+   }
+   return template
+}
+
+goToViewport(initText(text))
+
+// Вивід у в'юпорт
+function goToViewport(code) {
+   const magic = document.querySelector('.magic')
+   magic.insertAdjacentHTML("beforeend", code)
+}
+
+
+// Налаштування вмикає можливість
+// редагувати текст прямо в в'юпорті
+document.designMode = "on"

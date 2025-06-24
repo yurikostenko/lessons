@@ -1,3 +1,48 @@
 @use "sass:math";
 @use "_reset";
 @use "_mixins.scss" as *;
+
+/* ===== Основні стилі ===== */
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper > main {
+   flex-grow: 1;
+}
+
+[class*="__container"] {
+   margin: 0 auto;
+   padding: 0 toRem(15);
+   max-width: toRem(1030);
+}
+
+/* ============================== */
+
+.magic {
+   padding: toRem(50);
+   span {
+      opacity: 0;
+      display: inline-block;
+      font-size: toRem(50);
+
+      animation: some-anim 2s 1 ease forwards; // якщо вказати infinity буде цікава анімація
+   }
+}
+
+@keyframes some-anim {
+   0% {
+      opacity: 0;
+      rotate: -50deg;
+      // transform: translate(0px, 10%) rotate(10deg);
+   }
+   100% {
+      opacity: 1;
+      rotate: 0deg;
+      // transform: translate(0px, 0) rotate(0deg);
+   }
+}
