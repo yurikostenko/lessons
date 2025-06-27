@@ -85,7 +85,18 @@ function safeDivide(a, b) {
 
    // isFinite повертає true, якщо значення — звичайне число,
    // яке не є Infinity, -Infinity або NaN.
-   return !Number.isFinite(result) ? 'недійсні дані' : `Результат ділення: ${result}`
+   return !Number.isFinite(result) ? 'Результат ділення: недійсні дані' : `Результат ділення: ${result}`
+
+   //    Покроково
+
+   // 	if (Number.isNaN(result)) {
+   // 		return 'Результат NaN'
+   // 	}
+
+   // 	if (Math.abs(result) === Infinity) {
+   // 		return 'Результат Infinity'
+   // 	}
+   // 		return `Результат ділення: ${result}`
 
 }
 
