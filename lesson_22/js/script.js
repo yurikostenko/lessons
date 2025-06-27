@@ -77,11 +77,16 @@ if (2 * 20 <= 10 || 30 / 2 < 5 && 10 <= "10" || 20 === "20") {
 function safeDivide(a, b) {
    const result = a / b;
 
-   if (!Number.isFinite(result)) {
-      return 'Результат ділення: недійсні дані';
-   }
+   // if (!Number.isFinite(result)) {
+   //    return 'Результат ділення: недійсні дані';
+   // }
 
-   return 'Результат ділення: ' + result;
+   // return 'Результат ділення: ' + result;
+
+   // isFinite повертає true, якщо значення — звичайне число,
+   // яке не є Infinity, -Infinity або NaN.
+   return !Number.isFinite(result) ? 'недійсні дані' : `Результат ділення: ${result}`
+
 }
 
 
