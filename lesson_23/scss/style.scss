@@ -1,0 +1,32 @@
+@use "sass:math";
+@use "_reset";
+@use "_mixins.scss" as *;
+
+/* ===== Основні стилі ===== */
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper > main {
+   flex-grow: 1;
+}
+
+[class*="__container"] {
+   margin: 0 auto;
+   padding: 0 toRem(15);
+   max-width: toRem(1030);
+}
+
+.button {
+   padding: toRem(20);
+   text-justify: center;
+   background-color: #efb2b2;
+}
+
+.link {
+   padding: toRem(15);
+}
